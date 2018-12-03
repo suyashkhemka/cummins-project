@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- CDN = Content Delivery Network -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tablesort.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Rubik:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  <title>Project Dashboard</title>
+</head>
+
+<body>
+  <div id="clientMain">
+
+    <header>
+      <div class="intro">
+        <h1>Alternative Green Systems - Turbine Outage Management</h1>
+        <p class="quote">&ldquo;The future is green energy, sustainability, renewable energy&rdquo;</p>
+      </div>
+
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="content">
+        <h1>Our Clients</h1>
+        <!-- https://getbootstrap.com/docs/4.0/content/tables/ -->
+        <table id="clientTable" class="table table-striped table-sm table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Client ID</th>
+              <th scope="col">Client Name</th>
+              <th scope="col">Client Description</th>
+              <th scope="col">GICS Sector</th>
+              <th scope="col">GICS SubIndustry</th>
+              <th scope="col">Headquarters</th>
+              <th scope="col">View Sites</th>
+              <th scope="col">View Notes</th>
+            </tr>
+          </thead>
+          <tbody id="'clientTableBody" v-for="data in clients" :key="data.clientId">
+            <td>{{data.clientId}}</td>
+            <td>{{data.clientName}}</td>
+            <td>{{data.clientDescription}}</td>
+            <td>{{data.gicsSector}}</td>
+            <td>{{data.gicsSubIndustry}}</td>
+            <td>{{data.headquarters}}</td>
+            <td>
+              <button class="viewClientSiteButton" @click="gotoSite(data.clientId)">View Sites</button>
+            </td>
+            <td>
+              <button class="viewClientNotesButton" @click="gotoClientNotes(data.clientId)">View Notes</button>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="content">
+          <!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
+          <form id="newClientForm" @submit.prevent="handleClientForm">
+            <div class="form-group">
+              <p>
+                <label>Client Name</label>
+              </p>
+              <p>
+                <input type="text" class="form-control" id="clientName" v-model="clientForm.clientName" required>
+              </p>
+              <p>
+                <label>Client Description</label>
+              </p>
+              <p>
+                <input type="text" class="form-control" id="clientDescription" v-model="clientForm.clientDescription" required>
+              </p>
+              <p>
+                <label>GICS Sector</label>
+              </p>
+              <p>
+                <input type="text" class="form-control" id="gicsSector" v-model="clientForm.gicsSector" required>
+              </p>
+              <p>
+                <label>GICS SubIndustry</label>
+              </p>
+              <p>
+                <input type="text" class="form-control" id="gicsSubIndustry" v-model="clientForm.gicsSubIndustry" required>
+              </p>
+              <p>
+                <label>Headquarters</label>
+              </p>
+              <p>
+                <input type="text" class="form-control" id="headquarters" v-model="clientForm.headquarters" required>
+              </p>
+
+            </div>
+            <p>
+              <button type="submit" id="submitNewComment" class="btn btn-primary">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+
+
+    <footer>
+      <div class="content">
+        <div class="row">
+          <p>Copy Right Team Green 16 &mdash; All Rights reserved. Don&rsquo;t take our stuff.</p>
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <!-- Vue: development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/client.app.js"></script>
+
+    <!-- Tasblesort: https://github.com/tristen/tablesort -->
+    <script src="js/tablesort.min.js"></script>
+
+    <script>
+      new Tablesort(document.getElementById('clientTable'));
+    </script>
+
+    <script type="text/javascript">
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+</body>
+
+</html>
