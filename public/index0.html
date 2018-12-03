@@ -1,0 +1,3946 @@
+<!-- This is EDITED cummins page -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+          <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta itemprop="acquia_lift:content_title" content="Homepage" />
+<meta itemprop="acquia_lift:content_type" content="homepage" />
+<meta itemprop="acquia_lift:page_type" content="node page" />
+<meta itemprop="acquia_lift:content_section" content="" />
+<meta itemprop="acquia_lift:content_keywords" content="" />
+<meta itemprop="acquia_lift:post_id" content="24511" />
+<meta itemprop="acquia_lift:content_uuid" content="6dd57871-5eb7-4bd4-bf04-1a9184759354" />
+<meta itemprop="acquia_lift:published_date" content="1541813877" />
+<meta itemprop="acquia_lift:persona" content="" />
+<meta itemprop="acquia_lift:engagement_score" content="1" />
+<meta itemprop="acquia_lift:account_id" content="CUMMINS" />
+<meta itemprop="acquia_lift:site_id" content="cummins_prod" />
+<meta itemprop="acquia_lift:contentOrigin" content="6ac27e07-a3c8-4dd0-7ccf-776bb22fc9a6" />
+<meta itemprop="acquia_lift:liftAssetsURL" content="https://lift3assets.lift.acquia.com/stable" />
+<meta itemprop="acquia_lift:liftDecisionAPIURL" content="https://us-east-1-decisionapi.lift.acquia.com" />
+<meta itemprop="acquia_lift:authEndpoint" content="https://us-east-1-oauth2.lift.acquia.com" />
+<meta itemprop="acquia_lift:contentReplacementMode" content="trusted" />
+<script src="https://lift3assets.lift.acquia.com/stable/lift.js" async></script>
+<meta name="title" content="Cummins | A Global Power Leader" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="fb:admins" content="russebp" />
+<link rel="shortlink" href="https://www.cummins.com/homepage" />
+<meta name="robots" content="index, follow, noodp" />
+<link rel="canonical" href="https://www.cummins.com/" />
+<meta property="og:site_name" content="Cummins Inc." />
+<meta http-equiv="content-language" content="en" />
+<meta name="twitter:title" content="Cummins | A Global Power Leader" />
+<meta name="twitter:site" content="@cummins" />
+<meta name="twitter:description" content="Diesel and alternative fuel engines and generators, and related components and technology." />
+<meta property="og:type" content="website" />
+<meta property="fb:app_id" content="1884349421823672" />
+<meta name="description" content="Diesel and alternative fuel engines and generators, and related components and technology." />
+<meta property="og:url" content="https://www.cummins.com/" />
+<meta name="msvalidate.01" content="2B089B8E1263E26C05B30E053E97B3A1" />
+<meta name="twitter:site:id" content="87299367" />
+<meta property="og:title" content="Homepage | Cummins Inc." />
+<meta name="google-site-verification" content="NIz9v43AFrVqr4S53joMDMn1I6hMhHPf666trM4ktm8" />
+<meta name="rights" content="© 2018 Cummins Inc., Box 3005, Columbus, IN 47202-3005 U.S.A." />
+<meta name="twitter:url" content="https://www.cummins.com/" />
+<meta name="twitter:image:height" content="830" />
+<meta name="twitter:image" content="https://www.cummins.com/sites/default/files/images/social/cummins-logo-signage-social.jpg" />
+<meta name="twitter:image:alt" content="Cummins Inc." />
+<meta name="twitter:image:width" content="1440" />
+<meta property="og:image" content="https://www.cummins.com/sites/default/files/images/social/cummins-logo-signage-social.jpg" />
+<meta property="og:image:url" content="https://www.cummins.com/sites/default/files/images/social/cummins-logo-signage-social.jpg" />
+<meta property="og:image:secure_url" content="https://www.cummins.com/sites/default/files/images/social/cummins-logo-signage-social.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:video:type" content="video.other" />
+<meta property="og:video:width" content="1920" />
+<meta property="og:image:width" content="1440" />
+<meta property="og:video:height" content="1080" />
+<meta property="og:image:height" content="830" />
+<meta property="og:phone_number" content="1(800)286-6467" />
+<meta property="og:locale" content="en_US" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Google Tag Manager - One Cummins -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WF6JZHF');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MW8PSB');</script>
+<!-- End Google Tag Manager -->
+<link rel="alternate" hreflang="en" href="https://www.cummins.com/homepage" />
+<link rel="shortcut icon" href="/themes/custom/cummins/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="/homepage" />
+
+    <title>Cummins | A Global Power Leader</title>
+    <link rel="stylesheet" href="/sites/default/files/css/css_1t9yZxRz8h26-tm_U-mnG96I7TzzZxVz3_tLsusnfhw.css?pj6gm2" media="all" />
+<link rel="stylesheet" href="/sites/default/files/css/css_WABcDWDvy4Fn5c_LXNZrvhmEMItachZcT_Jz25CS4A4.css?pj6gm2" media="all" />
+<link rel="stylesheet" href="/sites/default/files/css/css_jnwGOqFKSHCjrns2t-TDQVlIv6MzR3SF86lQdxcnpF8.css?pj6gm2" media="all" />
+
+
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+
+    <style type="text/css">
+      @font-face{
+        font-family:"Helvetica Neue eText";
+        font-style: normal;
+        font-weight: 400;
+        src:url("/themes/custom/cummins/Fonts/e0781a75-0ecb-464e-b6e9-85780ddc0921.eot?#iefix");
+        src:url("/themes/custom/cummins/Fonts/e0781a75-0ecb-464e-b6e9-85780ddc0921.eot?#iefix") format("eot"),url("/themes/custom/cummins/Fonts/b8765d4b-d9a3-48b9-ac65-560e7517cf0e.woff2") format("woff2"),url("/themes/custom/cummins/Fonts/d7d2e6c6-fc3a-41a5-9b52-648e12e215b2.woff") format("woff"),url("/themes/custom/cummins/Fonts/cb64744b-d0f7-4ef8-a790-b60d6e3e4f21.ttf") format("truetype");
+      }
+      @font-face{
+        font-family:"Helvetica Neue eText";
+        font-style: italic;
+        font-weight: 400;
+        src:url("/themes/custom/cummins/Fonts/fc780ce0-5b33-4e1d-b89b-66111a4d0ed8.eot?#iefix");
+        src:url("/themes/custom/cummins/Fonts/fc780ce0-5b33-4e1d-b89b-66111a4d0ed8.eot?#iefix") format("eot"),url("/themes/custom/cummins/Fonts/0381d699-73ef-4558-9e61-38385c9fc5da.woff2") format("woff2"),url("/themes/custom/cummins/Fonts/2731e338-d92f-4492-8480-8b55ae1139f6.woff") format("woff"),url("/themes/custom/cummins/Fonts/40e43cb5-d6b2-4ceb-b369-527d1007a2c7.ttf") format("truetype");
+      }
+      @font-face{
+        font-family:"Helvetica Neue eText";
+        font-style: normal;
+        font-weight: 500;
+        src:url("/themes/custom/cummins/Fonts/706ec8e5-fe4a-4518-91a6-7aba4d3d333f.eot?#iefix");
+        src:url("/themes/custom/cummins/Fonts/706ec8e5-fe4a-4518-91a6-7aba4d3d333f.eot?#iefix") format("eot"),url("/themes/custom/cummins/Fonts/dc50c02f-3f77-4e75-b89c-e3f9bb4752e6.woff2") format("woff2"),url("/themes/custom/cummins/Fonts/ce6f5b38-1cb5-4a27-8182-583aa68b2436.woff") format("woff"),url("/themes/custom/cummins/Fonts/ff06cde7-e06a-4cf0-af4d-5b2f737bf544.ttf") format("truetype");
+      }
+      @font-face{
+        font-family:"Helvetica Neue eText";
+        font-style: italic;
+        font-weight: 500;
+        src:url("/themes/custom/cummins/Fonts/5935d076-bd6d-4ca4-b995-d739ffa09754.eot?#iefix");
+        src:url("/themes/custom/cummins/Fonts/5935d076-bd6d-4ca4-b995-d739ffa09754.eot?#iefix") format("eot"),url("/themes/custom/cummins/Fonts/56e66f56-3016-44fd-84b2-8e40d9743656.woff2") format("woff2"),url("/themes/custom/cummins/Fonts/4d65bb6f-e667-4bd0-8e92-34e67bf6ac8b.woff") format("woff"),url("/themes/custom/cummins/Fonts/86631d82-6e27-4db2-988a-6b79a6c0d8ed.ttf") format("truetype");
+      }
+      @font-face{
+        font-family:"Helvetica Neue eText";
+        font-style: normal;
+        font-weight: 600;
+        src:url("/themes/custom/cummins/Fonts/a747e1ea-ecdf-4f3d-ad47-3df9cfbee3cc.eot?#iefix");
+        src:url("/themes/custom/cummins/Fonts/a747e1ea-ecdf-4f3d-ad47-3df9cfbee3cc.eot?#iefix") format("eot"),url("/themes/custom/cummins/Fonts/3e8a8b56-3cb0-4347-b670-eaaf06b76e9b.woff2") format("woff2"),url("/themes/custom/cummins/Fonts/07173950-fa69-4b65-9c71-0cf2ec00b51d.woff") format("woff"),url("/themes/custom/cummins/Fonts/aac5a4b8-ffd3-4529-a098-21b91bc86f9a.ttf") format("truetype");
+      }
+      @font-face{
+        font-family:"Helvetica Neue eText";
+        font-style: italic;
+        font-weight: 600;
+        src:url("/themes/custom/cummins/Fonts/4da0f075-0a40-4129-a4df-43aa140d94b0.eot?#iefix");
+        src:url("/themes/custom/cummins/Fonts/4da0f075-0a40-4129-a4df-43aa140d94b0.eot?#iefix") format("eot"),url("/themes/custom/cummins/Fonts/7d8282ed-f0c0-49f6-99f1-95be8623cbf1.woff2") format("woff2"),url("/themes/custom/cummins/Fonts/2620c12a-dedb-4d35-8f4c-b951dcc1d4df.woff") format("woff"),url("/themes/custom/cummins/Fonts/ae4300e1-4ab3-46c8-b619-0d142d97522c.ttf") format("truetype");
+      }
+      @font-face{
+        font-family:"Helvetica Neue eText";
+        font-style: normal;
+        font-weight: 700;
+        src:url("/themes/custom/cummins/Fonts/a95d2895-fa71-4ce7-bc1e-631169924be3.eot?#iefix");
+        src:url("/themes/custom/cummins/Fonts/a95d2895-fa71-4ce7-bc1e-631169924be3.eot?#iefix") format("eot"),url("/themes/custom/cummins/Fonts/6dfa3ef5-ebc5-4d23-a631-b3d746c2ad39.woff2") format("woff2"),url("/themes/custom/cummins/Fonts/588c9ba8-1d28-4ad6-bf18-7128152d84c4.woff") format("woff"),url("/themes/custom/cummins/Fonts/55334dfb-9c72-4147-8de0-21239f17ff25.ttf") format("truetype");
+      }
+      @font-face{
+        font-family:"Helvetica Neue eText";
+        font-style: italic;
+        font-weight: 700;
+        src:url("/themes/custom/cummins/Fonts/a48e33d0-3542-482d-9284-e41d31c4d583.eot?#iefix");
+        src:url("/themes/custom/cummins/Fonts/a48e33d0-3542-482d-9284-e41d31c4d583.eot?#iefix") format("eot"),url("/themes/custom/cummins/Fonts/15ed0ff2-0715-4aca-af0c-00840c3a4dd7.woff2") format("woff2"),url("/themes/custom/cummins/Fonts/9b77b336-b221-497e-b255-7833856bb4a9.woff") format("woff"),url("/themes/custom/cummins/Fonts/5c9a7798-4870-4139-ab84-7a300a7dc3e1.ttf") format("truetype");
+      }
+    </style>
+    <script type="text/javascript">
+    var MTIProjectId='aa1e5e37-6774-4303-8157-78e06b8cd8c6';
+     (function() {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type='text/javascript';
+            mtiTracking.async='true';
+             mtiTracking.src='/themes/custom/cummins/js/mtiFontTrackingCode.js';
+            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+       })();
+    </script>
+  </head>
+  <body class="layout-one-sidebar layout-sidebar-first front page-node-24511 not-card-page path-frontpage page-node-type-homepage">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+
+
+
+    <div id="page-wrapper">
+        <div id="page">
+                        <header id="header" class="header" role="banner" aria-label="Site header">
+                <div class="header-wrapper">
+                    <div class="section section-branding">
+                          <div class="region region-branding">
+    <div id="block-cummins-branding" class="block block-system block-system-branding-block">
+
+
+        <a href="/" title="Home" rel="home" class="site-logo">
+      <img src="/themes/custom/cummins/logo.png" alt="Home" />
+    </a>
+      </div>
+
+  </div>
+
+                    </div>
+                    <div class="section section-primary-menu">
+                          <div class="region region-primary-menu">
+    <div id="block-mainnavigation" class="block block-cummins-mega-menu block-cummins-mega-menu-blockmain-navigation">
+
+
+
+
+              <div class="big-nav">
+        <nav class="big-nav_top-level" role="menu">
+                      <button class="header_link" id="header_link-products" data-nav="big-nav_products" data-link="">Products</button>
+                      <button class="header_link" id="header_link-parts-and-service" data-nav="big-nav_parts-and-service" data-link="">Parts &amp; Service</button>
+                      <button class="header_link" id="header_link-about" data-nav="big-nav_about" data-link="">About</button>
+                      <button class="header_link" id="header_link-news" data-nav="big-nav_news" data-link="">News</button>
+                      <button class="header_link" id="header_link-careers" data-nav="big-nav_careers" data-link="https://careers.cummins.com">Careers</button>
+                      <button class="header_link" id="header_link-support" data-nav="big-nav_support" data-link="/customer-assistance">Support</button>
+                  </nav>
+
+                    <div class="big-nav_mega-menu" id="big-nav_products">
+              <div class="big-nav_mega-menu_container">
+                                          <nav class="big-nav_mega-menu_tabs">
+                                                        <button class="tab_link" id="tab_link-engines" data-nav="tab-nav_engines" data-link="/engines">Engines</button>
+                                                                      <button class="tab_link" id="tab_link-generators" data-nav="tab-nav_generators" data-link="/generators">Generators</button>
+                                                                      <button class="tab_link" id="tab_link-components" data-nav="tab-nav_components" data-link="/components">Components</button>
+                                                                      <button class="tab_link" id="tab_link-electrified-power" data-nav="tab-nav_electrified-power" data-link="/electrification">Electrified Power</button>
+                                                                      <button class="tab_link" id="tab_link-product-finder" data-nav="tab-nav_product-finder" data-link="/product-finder">Product Finder</button>
+                                    </nav>
+
+          <div class="big-nav_tab_container">
+                                                        <ul class="tab-nav" id="tab-nav_engines">
+
+        <li id="menu-item-oh-highway" class="menu-item menu-item-has-children menu-item-link menu-item-oh-highway">
+                                    <span>Applications</span>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-agriculture" class="menu-item menu-item-link menu-item-agriculture">
+                                    <a href="/engines/agriculture" data-drupal-link-system-path="node/21201">Agriculture</a>
+
+
+
+        </li>
+
+        <li id="menu-item-construction" class="menu-item menu-item-link menu-item-construction">
+                                    <a href="/engines/construction" data-drupal-link-system-path="node/21206">Construction</a>
+
+
+
+        </li>
+
+        <li id="menu-item-defense" class="menu-item menu-item-link menu-item-defense">
+                                    <a href="/engines/defense" data-drupal-link-system-path="node/21211">Defense</a>
+
+
+
+        </li>
+
+        <li id="menu-item-drilling" class="menu-item menu-item-link menu-item-drilling">
+                                    <a href="/engines/drilling" data-drupal-link-system-path="node/21266">Drilling</a>
+
+
+
+        </li>
+
+        <li id="menu-item-euro-truck-and-bus" class="menu-item menu-item-link menu-item-euro-truck-and-bus">
+                                    <a href="/engines/euro-truck-and-bus" data-drupal-link-system-path="node/21161">Euro Truck &amp; Bus</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fire-emergency" class="menu-item menu-item-link menu-item-fire-emergency">
+                                    <a href="/engines/fire-and-emergency" data-drupal-link-system-path="node/21216">Fire &amp; Emergency</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fire-pump-drive" class="menu-item menu-item-link menu-item-fire-pump-drive">
+                                    <a href="/engines/fire-pump-drives" data-drupal-link-system-path="node/23936">Fire Pump Drives</a>
+
+
+
+        </li>
+
+        <li id="menu-item-g-drive-engines" class="menu-item menu-item-link menu-item-g-drive-engines">
+                                    <a href="/g-drive-engines" data-drupal-link-system-path="node/24291">G-Drive Engines</a>
+
+
+
+        </li>
+
+        <li id="menu-item-gas-compression" class="menu-item menu-item-link menu-item-gas-compression">
+                                    <a href="/engines/gas-compression" data-drupal-link-system-path="node/21271">Gas Compression</a>
+
+
+
+        </li>
+
+        <li id="menu-item-heavy-duty-truck" class="menu-item menu-item-link menu-item-heavy-duty-truck">
+                                    <a href="/engines/heavy-duty-truck" data-drupal-link-system-path="node/21171">Heavy-Duty Truck</a>
+
+
+
+        </li>
+
+        <li id="menu-item-integrated-power" class="menu-item menu-item-link menu-item-integrated-power">
+                                    <a href="/integrated-power" data-drupal-link-system-path="node/24091">Integrated Power</a>
+
+
+
+        </li>
+
+        <li id="menu-item-light-commercial-vehicle" class="menu-item menu-item-link menu-item-light-commercial-vehicle">
+                                    <a href="/engines/light-commercial-vehicle" data-drupal-link-system-path="node/21176">Light Commercial Vehicle</a>
+
+
+
+        </li>
+
+        <li id="menu-item-auxiliary-engines" class="menu-item menu-item-link menu-item-auxiliary-engines">
+                                    <a href="/engines/marine-auxiliary" data-drupal-link-system-path="node/21226">Marine Auxiliary</a>
+
+
+
+        </li>
+
+        <li id="menu-item-propulsion-engines" class="menu-item menu-item-link menu-item-propulsion-engines">
+                                    <a href="/engines/marine-propulsion" data-drupal-link-system-path="node/21221">Marine Propulsion</a>
+
+
+
+        </li>
+
+        <li id="menu-item-recon-marine" class="menu-item menu-item-link menu-item-recon-marine">
+                                    <a href="/engines/recon-marine" data-drupal-link-system-path="node/21231">Marine ReCon</a>
+
+
+
+        </li>
+
+        <li id="menu-item-medium-duty-truck" class="menu-item menu-item-link menu-item-medium-duty-truck">
+                                    <a href="/engines/medium-duty-truck" data-drupal-link-system-path="node/21181">Medium-Duty Truck</a>
+
+
+
+        </li>
+
+        <li id="menu-item-mining" class="menu-item menu-item-link menu-item-mining">
+                                    <a href="/engines/mining" data-drupal-link-system-path="node/21236">Mining</a>
+
+
+
+        </li>
+
+        <li id="menu-item-motorhome-rv" class="menu-item menu-item-link menu-item-motorhome-rv">
+                                    <a href="/engines/motorhome-and-rv" data-drupal-link-system-path="node/21186">Motorhome &amp; RV</a>
+
+
+
+        </li>
+
+        <li id="menu-item-pickup-truck" class="menu-item menu-item-link menu-item-pickup-truck">
+                                    <a href="/engines/pickup-truck" data-drupal-link-system-path="node/21131">Pickup Truck</a>
+
+
+
+        </li>
+
+        <li id="menu-item-rail" class="menu-item menu-item-link menu-item-rail">
+                                    <a href="/engines/rail" data-drupal-link-system-path="node/21281">Rail</a>
+
+
+
+        </li>
+
+        <li id="menu-item-repower" class="menu-item menu-item-link menu-item-repower">
+                                    <a href="/engines/repower" data-drupal-link-system-path="product/1036">Repower</a>
+
+
+
+        </li>
+
+        <li id="menu-item-school-bus" class="menu-item menu-item-link menu-item-school-bus">
+                                    <a href="/engines/school-bus" data-drupal-link-system-path="node/21191">School Bus</a>
+
+
+
+        </li>
+
+        <li id="menu-item-transit-bus" class="menu-item menu-item-link menu-item-transit-bus">
+                                    <a href="/engines/transit-bus" data-drupal-link-system-path="node/21196">Transit Bus</a>
+
+
+
+        </li>
+
+        <li id="menu-item-well-servicing" class="menu-item menu-item-link menu-item-well-servicing">
+                                    <a href="/engines/well-servicing" data-drupal-link-system-path="node/21276">Well Servicing</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+        <li id="menu-item-marine" class="menu-item menu-item-has-children menu-item-link menu-item-marine">
+                                    <span>Resources</span>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-brochures" class="menu-item menu-item-link menu-item-brochures">
+                                    <a href="/brochures" data-drupal-link-system-path="node/23506">Brochures</a>
+
+
+
+        </li>
+
+        <li id="menu-item-technical-documents" class="menu-item menu-item-link menu-item-technical-documents">
+                                    <a href="/manuals-and-technical-documents" data-drupal-link-system-path="node/73">Technical Documents</a>
+
+
+
+        </li>
+
+        <li id="menu-item-case-studies" class="menu-item menu-item-link menu-item-case-studies">
+                                    <a href="/case-studies" data-drupal-link-system-path="node/23346">Case Studies</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-finder2" class="menu-item menu-item-link menu-item-product-finder2">
+                                    <a href="/product-finder" data-drupal-link-system-path="node/21756">Product Finder</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+                </ul>
+                                                                      <ul class="tab-nav" id="tab-nav_generators">
+
+        <li id="menu-item-applications" class="menu-item menu-item-has-children menu-item-link menu-item-applications">
+                                    <span>Applications</span>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-cogeneration" class="menu-item menu-item-link menu-item-cogeneration">
+                                    <a href="/generators/cogeneration" data-drupal-link-system-path="node/23691">Cogeneration</a>
+
+
+
+        </li>
+
+        <li id="menu-item-commercial-industrial" class="menu-item menu-item-link menu-item-commercial-industrial">
+                                    <a href="/generators/commercial-industrial" data-drupal-link-system-path="node/23541">Commercial Industrial</a>
+
+
+
+        </li>
+
+        <li id="menu-item-commercial-mobile" class="menu-item menu-item-link menu-item-commercial-mobile">
+                                    <a href="/generators/commercial-mobile" data-drupal-link-system-path="node/23536">Commercial Mobile</a>
+
+
+
+        </li>
+
+        <li id="menu-item-data-centers" class="menu-item menu-item-link menu-item-data-centers">
+                                    <a href="/generators/data-center-dcc-rating" data-drupal-link-system-path="node/23556">Data Centers</a>
+
+
+
+        </li>
+
+        <li id="menu-item-distributed-generation-peaking-power" class="menu-item menu-item-link menu-item-distributed-generation-peaking-power">
+                                    <a href="/generators/distributed-generation-peaking-power" data-drupal-link-system-path="node/23701">Distributed Generation / Peaking Power</a>
+
+
+
+        </li>
+
+        <li id="menu-item-greenhouse" class="menu-item menu-item-link menu-item-greenhouse">
+                                    <a href="/generators/commercial-greenhouse-growers" data-drupal-link-system-path="node/23706">Greenhouse</a>
+
+
+
+        </li>
+
+        <li id="menu-item-healthcare" class="menu-item menu-item-link menu-item-healthcare">
+                                    <a href="/generators/healthcare" data-drupal-link-system-path="node/23711">Healthcare</a>
+
+
+
+        </li>
+
+        <li id="menu-item-high-horsepower-commercial-industrial" class="menu-item menu-item-link menu-item-high-horsepower-commercial-industrial">
+                                    <a href="/generators/high-hp-commercial-industrial" data-drupal-link-system-path="node/23561">High Horsepower Commercial Industrial</a>
+
+
+
+        </li>
+
+        <li id="menu-item-home-standby" class="menu-item menu-item-link menu-item-home-standby">
+                                    <a href="https://homegenerators.cummins.com/">Home Standby</a>
+
+
+
+        </li>
+
+        <li id="menu-item-integrated-power-systems" class="menu-item menu-item-link menu-item-integrated-power-systems">
+                                    <a href="/generators/integrated-power-systems" data-drupal-link-system-path="node/23716">Integrated Power Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-marine-gensets" class="menu-item menu-item-link menu-item-marine-gensets">
+                                    <a href="/generators/marine-gensets" data-drupal-link-system-path="node/23576">Marine</a>
+
+
+
+        </li>
+
+        <li id="menu-item-military-ammps-gsa" class="menu-item menu-item-link menu-item-military-ammps-gsa">
+                                    <a href="/generators/military-ammps-gsa" data-drupal-link-system-path="node/23721">Military / AMMPS / GSA</a>
+
+
+
+        </li>
+
+        <li id="menu-item-mining-gensets" class="menu-item menu-item-link menu-item-mining-gensets">
+                                    <a href="/generators/mining-power-solutions" data-drupal-link-system-path="node/23726">Mining</a>
+
+
+
+        </li>
+
+        <li id="menu-item-oil-gas-gensets" class="menu-item menu-item-link menu-item-oil-gas-gensets">
+                                    <a href="/generators/oil-and-gas" data-drupal-link-system-path="node/23731">Oil &amp; Gas</a>
+
+
+
+        </li>
+
+        <li id="menu-item-prime-power" class="menu-item menu-item-link menu-item-prime-power">
+                                    <a href="/generators/prime-power" data-drupal-link-system-path="node/23736">Prime Power</a>
+
+
+
+        </li>
+
+        <li id="menu-item-recreational-vehicles" class="menu-item menu-item-link menu-item-recreational-vehicles">
+                                    <a href="/generators/motorhome-and-rv" data-drupal-link-system-path="node/23581">Recreational Vehicles</a>
+
+
+
+        </li>
+
+        <li id="menu-item-rental-companies" class="menu-item menu-item-link menu-item-rental-companies">
+                                    <a href="/generators/rental-power-solutions" data-drupal-link-system-path="node/23586">Rental Companies</a>
+
+
+
+        </li>
+
+        <li id="menu-item-small-business-standby" class="menu-item menu-item-link menu-item-small-business-standby">
+                                    <a href="/generators/small-business-standby" data-drupal-link-system-path="node/23591">Small Business Standby</a>
+
+
+
+        </li>
+
+        <li id="menu-item-standby-power" class="menu-item menu-item-link menu-item-standby-power">
+                                    <a href="/generators/standby-power" data-drupal-link-system-path="node/23741">Standby Power</a>
+
+
+
+        </li>
+
+        <li id="menu-item-telecom" class="menu-item menu-item-link menu-item-telecom">
+                                    <a href="/generators/telecom" data-drupal-link-system-path="node/23596">Telecom</a>
+
+
+
+        </li>
+
+        <li id="menu-item-water-treatment" class="menu-item menu-item-link menu-item-water-treatment">
+                                    <a href="/generators/water-treatment" data-drupal-link-system-path="node/23746">Water Treatment</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+        <li id="menu-item-related-products-and-services" class="menu-item menu-item-has-children menu-item-link menu-item-related-products-and-services">
+                                    <span>Related Products &amp; Services</span>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-paralleling-systems" class="menu-item menu-item-link menu-item-paralleling-systems">
+                                    <a href="/generators/related-products/paralleling-systems" data-drupal-link-system-path="node/23986">Paralleling Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-parts-accessories" class="menu-item menu-item-link menu-item-parts-accessories">
+                                    <a href="/generators/related-products/parts-and-accessories" data-drupal-link-system-path="node/23601">Parts &amp; Accessories</a>
+
+
+
+        </li>
+
+        <li id="menu-item-remote-monitoring-systems" class="menu-item menu-item-link menu-item-remote-monitoring-systems">
+                                    <a href="/generators/related-products/remote-monitoring-systems" data-drupal-link-system-path="node/23991">Remote Monitoring Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-transfer-switches" class="menu-item menu-item-link menu-item-transfer-switches">
+                                    <a href="/generators/related-products/transfer-switches" data-drupal-link-system-path="node/23996">Transfer Switches</a>
+
+
+
+        </li>
+
+        <li id="menu-item-alternators" class="menu-item menu-item-link menu-item-alternators">
+                                    <a href="https://stamford-avk.com/">Alternators</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+        <li id="menu-item-uses" class="menu-item menu-item-has-children menu-item-link menu-item-uses">
+                                    <span>Resources</span>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-brochures2" class="menu-item menu-item-link menu-item-brochures2">
+                                    <a href="/brochures" data-drupal-link-system-path="node/23506">Brochures</a>
+
+
+
+        </li>
+
+        <li id="menu-item-technical-documents2" class="menu-item menu-item-link menu-item-technical-documents2">
+                                    <a href="/manuals-and-technical-documents" data-drupal-link-system-path="node/73">Technical Documents</a>
+
+
+
+        </li>
+
+        <li id="menu-item-case-studies2" class="menu-item menu-item-link menu-item-case-studies2">
+                                    <a href="/generator-case-studies" data-drupal-link-system-path="node/24316">Case Studies</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-finder3" class="menu-item menu-item-link menu-item-product-finder3">
+                                    <a href="/product-finder" data-drupal-link-system-path="node/21756">Product Finder</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+                </ul>
+                                                                      <ul class="tab-nav" id="tab-nav_components">
+
+        <li id="menu-item-aftertreatment" class="menu-item menu-item-has-children menu-item-link menu-item-aftertreatment">
+                                    <a href="/components/aftertreatment" data-drupal-link-system-path="node/331">Aftertreatment</a>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-high-horsepower-scr" class="menu-item menu-item-link menu-item-high-horsepower-scr">
+                                    <a href="/components/aftertreatment/high-horsepower-scr" data-drupal-link-system-path="node/226">High-Horsepower SCR</a>
+
+
+
+        </li>
+
+        <li id="menu-item-modular-aftertreatment-systems" class="menu-item menu-item-link menu-item-modular-aftertreatment-systems">
+                                    <a href="/components/aftertreatment/modular-aftertreatment-system" data-drupal-link-system-path="node/231">Modular Aftertreatment Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-single-module" class="menu-item menu-item-link menu-item-single-module">
+                                    <a href="/components/aftertreatment/single-module" data-drupal-link-system-path="node/236">Single Module</a>
+
+
+
+        </li>
+
+        <li id="menu-item-system-fundamentals" class="menu-item menu-item-link menu-item-system-fundamentals">
+                                    <a href="/components/aftertreatment/system-fundamentals" data-drupal-link-system-path="node/216">System Fundamentals</a>
+
+
+
+        </li>
+
+        <li id="menu-item-urea-dosing-technologies" class="menu-item menu-item-link menu-item-urea-dosing-technologies">
+                                    <a href="/components/aftertreatment/urea-dosing-technologies" data-drupal-link-system-path="node/221">Urea Dosing Technologies</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+        <li id="menu-item-electronics-fuel-systems" class="menu-item menu-item-has-children menu-item-link menu-item-electronics-fuel-systems">
+                                    <a href="/components/electronics-fuel-systems" data-drupal-link-system-path="node/20356">Electronics &amp; Fuel Systems</a>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-electronics" class="menu-item menu-item-link menu-item-electronics">
+                                    <a href="/components/electronics-fuel-systems/electronics" data-drupal-link-system-path="node/20361">Electronics</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fuel-systems" class="menu-item menu-item-link menu-item-fuel-systems">
+                                    <a href="/components/electronics-fuel-systems/fuel-systems" data-drupal-link-system-path="node/20371">Fuel Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-aftermarket-remanufacturing" class="menu-item menu-item-link menu-item-aftermarket-remanufacturing">
+                                    <a href="/components/electronics-fuel-systems/aftermarket-reman" data-drupal-link-system-path="node/20401">Aftermarket &amp; Remanufacturing</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+        <li id="menu-item-filtration" class="menu-item menu-item-has-children menu-item-link menu-item-filtration">
+                                    <a href="/components/filtration" data-drupal-link-system-path="node/104">Filtration</a>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-air-filtration" class="menu-item menu-item-link menu-item-air-filtration">
+                                    <a href="https://www.cumminsfiltration.com/air">Air Filtration</a>
+
+
+
+        </li>
+
+        <li id="menu-item-crankcase-ventilation" class="menu-item menu-item-link menu-item-crankcase-ventilation">
+                                    <a href="https://www.cumminsfiltration.com/crankcaseventilation">Crankcase Ventilation</a>
+
+
+
+        </li>
+
+        <li id="menu-item-coolants-chemicals" class="menu-item menu-item-link menu-item-coolants-chemicals">
+                                    <a href="https://www.cumminsfiltration.com/ourcoolantsolutions">Coolants &amp; Chemicals</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fluid-analysis" class="menu-item menu-item-link menu-item-fluid-analysis">
+                                    <a href="https://www.cumminsfiltration.com/fluidanalysis">Fluid Analysis</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fuel-filtration" class="menu-item menu-item-link menu-item-fuel-filtration">
+                                    <a href="https://www.cumminsfiltration.com/fuel">Fuel Filtration</a>
+
+
+
+        </li>
+
+        <li id="menu-item-hydraulic-filtration" class="menu-item menu-item-link menu-item-hydraulic-filtration">
+                                    <a href="https://www.cumminsfiltration.com/hydraulics">Hydraulic Filtration</a>
+
+
+
+        </li>
+
+        <li id="menu-item-transmission-filtration" class="menu-item menu-item-link menu-item-transmission-filtration">
+                                    <a href="https://www.cumminsfiltration.com/transmission">Transmission Filtration</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+        <li id="menu-item-turbochargers" class="menu-item menu-item-has-children menu-item-link menu-item-turbochargers">
+                                    <a href="/components/turbochargers" data-drupal-link-system-path="node/102">Turbochargers &amp; Air Handling</a>
+
+                      <ul class="sub-menu">
+
+        <li id="menu-item-holset-turbochargers" class="menu-item menu-item-link menu-item-holset-turbochargers">
+                                    <a href="/components/holset-turbo-technologies/holset-turbochargers" data-drupal-link-system-path="node/256">Holset Turbochargers</a>
+
+
+
+        </li>
+
+        <li id="menu-item-turbocharger-innovation" class="menu-item menu-item-link menu-item-turbocharger-innovation">
+                                    <a href="/components/holset-turbo-technologies/turbocharger-innovation" data-drupal-link-system-path="node/21026">Turbocharger Innovation</a>
+
+
+
+        </li>
+
+        <li id="menu-item-power-turbines" class="menu-item menu-item-link menu-item-power-turbines">
+                                    <a href="/components/turbo-technologies/power-turbines" data-drupal-link-system-path="node/266">Power Turbines</a>
+
+
+
+        </li>
+
+        <li id="menu-item-two-stage-systems" class="menu-item menu-item-link menu-item-two-stage-systems">
+                                    <a href="/components/turbo-technologies/two-stage-systems" data-drupal-link-system-path="node/271">Two-Stage Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-turbo-componentry" class="menu-item menu-item-link menu-item-turbo-componentry">
+                                    <a href="/components/turbo-technologies/turbo-componentry" data-drupal-link-system-path="node/326">Turbo Componentry</a>
+
+
+
+        </li>
+
+        <li id="menu-item-holset-aftermarket" class="menu-item menu-item-link menu-item-holset-aftermarket">
+                                    <a href="/components/turbo-technologies/aftermarket" data-drupal-link-system-path="node/281">Holset Aftermarket</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-brochures" class="menu-item menu-item-link menu-item-product-brochures">
+                                    <a href="/components/turbo-technologies/brochures" data-drupal-link-system-path="node/276">Product Brochures</a>
+
+
+
+        </li>
+
+        <li id="menu-item-distributor-partner-zone" class="menu-item menu-item-link menu-item-distributor-partner-zone">
+                                    <a href="/components/turbo-technologies/partner-zone" data-drupal-link-system-path="node/286">Distributor Partner Zone</a>
+
+
+
+        </li>
+
+            </ul>
+
+
+        </li>
+
+                </ul>
+                                                                      <ul class="tab-nav" id="tab-nav_electrified-power">
+
+        <li id="menu-item-the-power-to-deliver2" class="menu-item menu-item-text_link menu-item-the-power-to-deliver2">
+                                    <a href="/node/117" data-drupal-link-system-path="node/117">The Power to Deliver</a>
+
+
+                        <div class="menu-item-text-link">
+                      <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Cummins will be the leading provider of electrified power in our commercial and industrial markets just as we are the leader in diesel and natural gas powered products.</p>
+
+<p>Cummins will provide the entire electrified power solution, as well as some of the most critical components that have the largest impact on performance, quality and power of the system to deliver the most value to our customers. Our Battery Electric Vehicle (BEV) system launches in 2019 for bus, and our Range Extended Electric Vehicle (REEV) system launches in 2020 for bus. Additional offerings for various other applications are soon to follow.</p>
+
+<p><a href="/electrification">Learn More</a></p>
+
+            </div>
+          </div>
+
+
+              </div>
+
+        </li>
+
+                </ul>
+                                                                      <ul class="tab-nav" id="tab-nav_product-finder">
+
+                </ul>
+                                    </div>
+
+              </div>
+            </div>
+                    <div class="big-nav_mega-menu" id="big-nav_parts-and-service">
+              <div class="big-nav_mega-menu_container">
+                                            <div class="big-nav_tab_container">
+                                    <ul class="tab-nav" id="tab-nav_sales-and-service">
+
+                        <li id="menu-item-sales-and-service" class="menu-item menu-item-has-children menu-item-link menu-item-sales-and-service">
+                                                                                                <span>Sales &amp; Service</span>
+
+                                                            <ul class="sub-menu">
+
+        <li id="menu-item-find-a-local-dealer" class="menu-item menu-item-link menu-item-find-a-local-dealer">
+                                    <a href="https://locator.cummins.com">Find a Local Dealer or Distributor</a>
+
+
+
+        </li>
+
+        <li id="menu-item-request-a-sales-quote" class="menu-item menu-item-link menu-item-request-a-sales-quote">
+                                    <a href="/sales-and-service#rfq-title" data-drupal-link-system-path="node/71">Request a Sales Quote</a>
+
+
+
+        </li>
+
+        <li id="menu-item-find-a-coach-care-service-center" class="menu-item menu-item-link menu-item-find-a-coach-care-service-center">
+                                    <a href="/service/coach-care">Find a Coach Care RV Service Center</a>
+
+
+
+        </li>
+
+        <li id="menu-item-contact-customer-assistance" class="menu-item menu-item-link menu-item-contact-customer-assistance">
+                                    <a href="/customer-assistance" data-drupal-link-system-path="node/20251">Contact Customer Assistance</a>
+
+
+
+        </li>
+
+                                </ul>
+
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_parts">
+
+                        <li id="menu-item-parts" class="menu-item menu-item-has-children menu-item-link menu-item-parts">
+                                                                                                <span>Parts</span>
+
+                                                            <ul class="sub-menu">
+
+        <li id="menu-item-find-a-local-dealer-parts" class="menu-item menu-item-link menu-item-find-a-local-dealer-parts">
+                                    <a href="https://locator.cummins.com">Find a Local Dealer or Distributor</a>
+
+
+
+        </li>
+
+        <li id="menu-item-request-a-sales-quote2" class="menu-item menu-item-link menu-item-request-a-sales-quote2">
+                                    <a href="/sales-and-service#rfq-title" data-drupal-link-system-path="node/71">Request a Sales Quote</a>
+
+
+
+        </li>
+
+        <li id="menu-item-benefits-of-genuine-cummins-parts" class="menu-item menu-item-link menu-item-benefits-of-genuine-cummins-parts">
+                                    <a href="/parts/benefits" data-drupal-link-system-path="node/316">Benefits of Genuine Cummins Parts</a>
+
+
+
+        </li>
+
+        <li id="menu-item-diesel-particulate-filters-dpf-" class="menu-item menu-item-link menu-item-diesel-particulate-filters-dpf-">
+                                    <a href="/parts/diesel-particulate-filters" data-drupal-link-system-path="node/321">Diesel Particulate Filters (DPF)</a>
+
+
+
+        </li>
+
+        <li id="menu-item-recon-engines-and-parts" class="menu-item menu-item-link menu-item-recon-engines-and-parts">
+                                    <a href="/parts/recon" data-drupal-link-system-path="node/296">ReCon Engines &amp; Parts</a>
+
+
+
+        </li>
+
+        <li id="menu-item-order-parts-online" class="menu-item menu-item-link menu-item-order-parts-online">
+                                    <a href="https://parts.cummins.com">Find Parts Online</a>
+
+
+
+        </li>
+
+                                </ul>
+
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_manuals-technical-documents">
+
+                        <li id="menu-item-manuals-technical-documents" class="menu-item menu-item-has-children menu-item-link menu-item-manuals-technical-documents">
+                                                                                                <span>Manuals &amp; Technical Documents</span>
+
+                                                            <ul class="sub-menu">
+
+        <li id="menu-item-find-a-local-dealer-documents" class="menu-item menu-item-link menu-item-find-a-local-dealer-documents">
+                                    <a href="https://locator.cummins.com">Find a Local Dealer or Distributor</a>
+
+
+
+        </li>
+
+        <li id="menu-item-find-documents-online" class="menu-item menu-item-link menu-item-find-documents-online">
+                                    <a href="https://quickserve.cummins.com">Find Documents Online</a>
+
+
+
+        </li>
+
+        <li id="menu-item-contact-customer-assistance-documents" class="menu-item menu-item-link menu-item-contact-customer-assistance-documents">
+                                    <a href="/customer-assistance" data-drupal-link-system-path="node/20251">Contact Customer Assistance</a>
+
+
+
+        </li>
+
+                                </ul>
+
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_digital-products-services">
+
+                        <li id="menu-item-digital-products-services" class="menu-item menu-item-has-children menu-item-link menu-item-digital-products-services">
+                                                                                                <span>Digital Products &amp; Services</span>
+
+                                                            <ul class="sub-menu">
+
+        <li id="menu-item-connected-diagnostics" class="menu-item menu-item-link menu-item-connected-diagnostics">
+                                    <a href="/parts-and-service/digital-products-and-services/connected-diagnostics" data-drupal-link-system-path="node/19026">Connected Diagnostics</a>
+
+
+
+        </li>
+
+        <li id="menu-item-eds" class="menu-item menu-item-link menu-item-eds">
+                                    <a href="/parts-and-service/digital-products-and-services/expert-diagnostic-system-eds" data-drupal-link-system-path="node/19041">EDS</a>
+
+
+
+        </li>
+
+        <li id="menu-item-guidanz" class="menu-item menu-item-link menu-item-guidanz">
+                                    <a href="/parts-and-service/digital-products-and-services/guidanz" data-drupal-link-system-path="node/19056">Guidanz</a>
+
+
+
+        </li>
+
+        <li id="menu-item-incal" class="menu-item menu-item-link menu-item-incal">
+                                    <a href="/parts-and-service/digital-products-and-services/incal" data-drupal-link-system-path="node/19076">Incal</a>
+
+
+
+        </li>
+
+        <li id="menu-item-inline" class="menu-item menu-item-link menu-item-inline">
+                                    <a href="/parts-and-service/digital-products-and-services/inline" data-drupal-link-system-path="node/19086">Inline</a>
+
+
+
+        </li>
+
+        <li id="menu-item-insite" class="menu-item menu-item-link menu-item-insite">
+                                    <a href="/parts-and-service/digital-products-and-services/insite" data-drupal-link-system-path="node/19186">Insite</a>
+
+
+
+        </li>
+
+        <li id="menu-item-powerspec" class="menu-item menu-item-link menu-item-powerspec">
+                                    <a href="/parts-and-service/digital-products-and-services/powerspec" data-drupal-link-system-path="node/19161">Powerspec</a>
+
+
+
+        </li>
+
+        <li id="menu-item-view-all" class="menu-item menu-item-link menu-item-view-all">
+                                    <a href="/parts-and-service/digital-products-and-services" data-drupal-link-system-path="node/18986">View All</a>
+
+
+
+        </li>
+
+                                </ul>
+
+
+                        </li>
+                    </ul>
+                            </div>
+
+              </div>
+            </div>
+                    <div class="big-nav_mega-menu" id="big-nav_about">
+              <div class="big-nav_mega-menu_container">
+                                            <div class="big-nav_tab_container">
+                                    <ul class="tab-nav" id="tab-nav_our-company">
+
+                        <li id="menu-item-our-company" class="menu-item menu-item-has-children menu-item-link menu-item-our-company">
+                                                                                                <span>Our Company</span>
+
+                                                            <ul class="sub-menu">
+
+        <li id="menu-item-cummins-overview" class="menu-item menu-item-link menu-item-cummins-overview">
+                                    <a href="/company/overview" data-drupal-link-system-path="node/48">Cummins Overview</a>
+
+
+
+        </li>
+
+        <li id="menu-item-mission-vision-and-values" class="menu-item menu-item-link menu-item-mission-vision-and-values">
+                                    <a href="/company/mission-vision-values" data-drupal-link-system-path="node/101">Mission, Vision &amp; Values</a>
+
+
+
+        </li>
+
+        <li id="menu-item-always-on" class="menu-item menu-item-link menu-item-always-on">
+                                    <a href="/always-on" data-drupal-link-system-path="node/20981">Always On</a>
+
+
+
+        </li>
+
+        <li id="menu-item-innovation" class="menu-item menu-item-link menu-item-innovation">
+                                    <a href="/company/innovation" data-drupal-link-system-path="node/57">Innovation</a>
+
+
+
+        </li>
+
+        <li id="menu-item-global-impact" class="menu-item menu-item-link menu-item-global-impact">
+                                    <a href="/company/global-impact" data-drupal-link-system-path="node/100">Global Impact</a>
+
+
+
+        </li>
+
+        <li id="menu-item-history" class="menu-item menu-item-link menu-item-history">
+                                    <a href="/company/history" data-drupal-link-system-path="node/36">History</a>
+
+
+
+        </li>
+
+        <li id="menu-item-leadership" class="menu-item menu-item-link menu-item-leadership">
+                                    <a href="/company/old-leadership" data-drupal-link-system-path="node/70">Leadership</a>
+
+
+
+        </li>
+
+        <li id="menu-item-ethics-compliance" class="menu-item menu-item-link menu-item-ethics-compliance">
+                                    <a href="/company/ethics-and-compliance" data-drupal-link-system-path="node/53">Ethics &amp; Compliance</a>
+
+
+
+        </li>
+
+        <li id="menu-item-corporate-governance" class="menu-item menu-item-link menu-item-corporate-governance">
+                                    <a href="/company/corporate-governance" data-drupal-link-system-path="node/52">Corporate Governance</a>
+
+
+
+        </li>
+
+        <li id="menu-item-clubs-merchandise" class="menu-item menu-item-link menu-item-clubs-merchandise">
+                                    <a href="/company/clubs-and-merchandise" data-drupal-link-system-path="node/50">Clubs &amp; Merchandise</a>
+
+
+
+        </li>
+
+        <li id="menu-item-global-websites" class="menu-item menu-item-link menu-item-global-websites">
+                                    <a href="/company/global-websites" data-drupal-link-system-path="node/341">Global Websites</a>
+
+
+
+        </li>
+
+                                </ul>
+
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_investor-relations">
+
+                        <li id="menu-item-investor-relations" class="menu-item menu-item-has-children menu-item-link menu-item-investor-relations">
+                                                                                                <span>Investor Relations</span>
+
+                                                            <ul class="sub-menu">
+
+        <li id="menu-item-investor-overview" class="menu-item menu-item-link menu-item-investor-overview">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.199184303.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=irol-irhome">Investor Overview</a>
+
+
+
+        </li>
+
+        <li id="menu-item-financial-information" class="menu-item menu-item-link menu-item-financial-information">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.199184303.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=irol-reportsannual">Financial Information</a>
+
+
+
+        </li>
+
+        <li id="menu-item-governance-documents" class="menu-item menu-item-link menu-item-governance-documents">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.199184303.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=irol-govHighlights">Governance Documents</a>
+
+
+
+        </li>
+
+        <li id="menu-item-investor-contacts" class="menu-item menu-item-link menu-item-investor-contacts">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.156143163.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=irol-contact">Investor Contacts</a>
+
+
+
+        </li>
+
+        <li id="menu-item-investor-resources" class="menu-item menu-item-link menu-item-investor-resources">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.156143163.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=proxy">Investor Resources</a>
+
+
+
+        </li>
+
+        <li id="menu-item-annual-meeting-materials" class="menu-item menu-item-link menu-item-annual-meeting-materials">
+                                    <a href="https://www.cummins.com/investor-relations/annual-meeting-materials">Annual Meeting Materials</a>
+
+
+
+        </li>
+
+                                </ul>
+
+
+                        </li>
+                    </ul>
+                            </div>
+
+              </div>
+            </div>
+                    <div class="big-nav_mega-menu" id="big-nav_news">
+              <div class="big-nav_mega-menu_container">
+                                            <div class="big-nav_tab_container">
+                                    <ul class="tab-nav" id="tab-nav_newsroom">
+
+                        <li id="menu-item-newsroom" class="menu-item menu-item-text_link menu-item-newsroom">
+                                                                                                <a href="/news" data-drupal-link-system-path="news">Newsroom</a>
+
+
+                                                            <div class="menu-item-text-link">
+                                        <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Feature stories and news releases about Cummins people, technology and culture.</p>
+
+<p><a href="/news">Visit the Newsroom</a></p>
+
+            </div>
+          </div>
+
+
+                                </div>
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_media-contacts">
+
+                        <li id="menu-item-media-contacts" class="menu-item menu-item-text_link menu-item-media-contacts">
+                                                                                                <a href="/news/media-contacts" data-drupal-link-system-path="node/60">Media Contacts</a>
+
+
+                                                            <div class="menu-item-text-link">
+                                        <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Corporate media team contacts for interview requests and media assistance.</p>
+
+<p><a href="/media-contacts">View Contacts</a></p>
+
+            </div>
+          </div>
+
+
+                                </div>
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_press-resources">
+
+                        <li id="menu-item-press-resources" class="menu-item menu-item-text_link menu-item-press-resources">
+                                                                                                <a href="/press-resources" data-drupal-link-system-path="node/436">Press Resources</a>
+
+
+                                                            <div class="menu-item-text-link">
+                                        <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>News release library, event calendar, social links and newsletter subscriptions.</p>
+
+<p><a href="/press-resources">Access Resources</a></p>
+
+            </div>
+          </div>
+
+
+                                </div>
+
+                        </li>
+                    </ul>
+                            </div>
+
+              </div>
+            </div>
+                    <div class="big-nav_mega-menu" id="big-nav_careers">
+              <div class="big-nav_mega-menu_container">
+
+              </div>
+            </div>
+                    <div class="big-nav_mega-menu" id="big-nav_support">
+              <div class="big-nav_mega-menu_container">
+                                            <div class="big-nav_tab_container">
+                                    <ul class="tab-nav" id="tab-nav_customer-assistance">
+
+                        <li id="menu-item-customer-assistance" class="menu-item menu-item-text_link menu-item-customer-assistance">
+                                                                                                <a href="/customer-assistance" data-drupal-link-system-path="node/20251">Customer Assistance</a>
+
+
+                                                            <div class="menu-item-text-link">
+                                        <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Search our solutions database or contact Cummins Care via phone or online form.</p>
+
+<p><a href="/customer-assistance">Ask Cummins Care</a></p>
+
+            </div>
+          </div>
+
+
+                                </div>
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_sales-service-locator">
+
+                        <li id="menu-item-sales-service-locator" class="menu-item menu-item-text_link menu-item-sales-service-locator">
+                                                                                                <a href="https://locator.cummins.com">Sales &amp; Service Locator</a>
+
+
+                                                            <div class="menu-item-text-link">
+                                        <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Find a local dealer or distributor for assistance with your Cummins sales or service needs.</p>
+
+<p><a href="https://locator.cummins.com">Find a Local Dealer</a></p>
+
+            </div>
+          </div>
+
+
+                                </div>
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_digital-products-services-support">
+
+                        <li id="menu-item-digital-products-services-support" class="menu-item menu-item-text_link menu-item-digital-products-services-support">
+                                                                                                <a href="/support/digital-products-and-services-support" data-drupal-link-system-path="node/18971">Digital Products &amp; Services Support</a>
+
+
+                                                            <div class="menu-item-text-link">
+                                        <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Download software updates, review FAQs and troubleshooting, get licensing support and more.</p>
+
+<p><a href="/support/digital-products-and-services-support">Access Digital Tools</a></p>
+
+            </div>
+          </div>
+
+
+                                </div>
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_online-rfq">
+
+                        <li id="menu-item-online-rfq" class="menu-item menu-item-text_link menu-item-online-rfq">
+                                                                                                <a href="/sales-and-service#rfq-title" data-drupal-link-system-path="node/71">Online RFQ</a>
+
+
+                                                            <div class="menu-item-text-link">
+                                        <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Get pricing for new Cummins engines, generators, components, parts or service.</p>
+
+<p><a href="/sales-and-service#rfq-title">Request a Quote</a></p>
+
+            </div>
+          </div>
+
+
+                                </div>
+
+                        </li>
+                    </ul>
+                                    <ul class="tab-nav" id="tab-nav_additional-links">
+
+                        <li id="menu-item-additional-links" class="menu-item menu-item-has-children menu-item-link menu-item-additional-links">
+                                                                                                <span>Additional Links</span>
+
+                                                            <ul class="sub-menu">
+
+        <li id="menu-item-warranty-information" class="menu-item menu-item-link menu-item-warranty-information">
+                                    <a href="/support/warranty" data-drupal-link-system-path="node/21886">Warranty Information</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-support-information" class="menu-item menu-item-link menu-item-product-support-information">
+                                    <a href="/support/product-support-information" data-drupal-link-system-path="node/21891">Product Support Information</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-registration" class="menu-item menu-item-link menu-item-product-registration">
+                                    <a href="/support/product-registration" data-drupal-link-system-path="node/201">Product Registration</a>
+
+
+
+        </li>
+
+                                </ul>
+
+
+                        </li>
+                    </ul>
+                            </div>
+
+              </div>
+            </div>
+              </div>
+
+
+
+              <div class="small-nav">
+                <button class="small-nav_toggle" type="button" data-toggle="collapse" data-target="#small-nav_holder" aria-controls="small-nav_holder" aria-expanded="false" aria-label="Open Menu">
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor" fill-rule="evenodd">
+              <rect width="16" height="2" y="0" rx="0"></rect>
+              <rect width="16" height="2" y="7" rx="0"></rect>
+              <rect width="16" height="2" y="14" rx="0"></rect>
+            </g>
+          </svg>
+          <span>Menu</span>
+        </button>
+
+        <div class="small-nav_holder" id="small-nav_holder">
+          <div class="small-nav_menu" id="small-nav_menu" data-children=".small-nav_menu_section">
+                          <div class="small-nav_menu_section">
+                <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_products" href="#small-nav_products">
+                  Products
+                  <span class="toggle-icon"></span>
+                </button>
+                                      <div class="small-nav_menu_links collapse" id="small-nav_products" role="tabpanel" data-parent="#small-nav_menu">
+                      <ul id="menu-mega-nav-products" class="menu">
+
+        <li id="menu-item-engines" class="menu-item menu-item-has-children menu-item-link menu-item-engines">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_engines" href="#small-nav_engines">
+              Engines
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_engines" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-engines" class="menu">
+
+        <li id="menu-item-oh-highway" class="menu-item menu-item-has-children menu-item-link menu-item-oh-highway">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_oh-highway" href="#small-nav_oh-highway">
+              Applications
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_oh-highway" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-oh-highway" class="menu">
+
+        <li id="menu-item-agriculture" class="menu-item menu-item-link menu-item-agriculture">
+                                    <a href="/engines/agriculture" data-drupal-link-system-path="node/21201">Agriculture</a>
+
+
+
+        </li>
+
+        <li id="menu-item-construction" class="menu-item menu-item-link menu-item-construction">
+                                    <a href="/engines/construction" data-drupal-link-system-path="node/21206">Construction</a>
+
+
+
+        </li>
+
+        <li id="menu-item-defense" class="menu-item menu-item-link menu-item-defense">
+                                    <a href="/engines/defense" data-drupal-link-system-path="node/21211">Defense</a>
+
+
+
+        </li>
+
+        <li id="menu-item-drilling" class="menu-item menu-item-link menu-item-drilling">
+                                    <a href="/engines/drilling" data-drupal-link-system-path="node/21266">Drilling</a>
+
+
+
+        </li>
+
+        <li id="menu-item-euro-truck-and-bus" class="menu-item menu-item-link menu-item-euro-truck-and-bus">
+                                    <a href="/engines/euro-truck-and-bus" data-drupal-link-system-path="node/21161">Euro Truck &amp; Bus</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fire-emergency" class="menu-item menu-item-link menu-item-fire-emergency">
+                                    <a href="/engines/fire-and-emergency" data-drupal-link-system-path="node/21216">Fire &amp; Emergency</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fire-pump-drive" class="menu-item menu-item-link menu-item-fire-pump-drive">
+                                    <a href="/engines/fire-pump-drives" data-drupal-link-system-path="node/23936">Fire Pump Drives</a>
+
+
+
+        </li>
+
+        <li id="menu-item-g-drive-engines" class="menu-item menu-item-link menu-item-g-drive-engines">
+                                    <a href="/g-drive-engines" data-drupal-link-system-path="node/24291">G-Drive Engines</a>
+
+
+
+        </li>
+
+        <li id="menu-item-gas-compression" class="menu-item menu-item-link menu-item-gas-compression">
+                                    <a href="/engines/gas-compression" data-drupal-link-system-path="node/21271">Gas Compression</a>
+
+
+
+        </li>
+
+        <li id="menu-item-heavy-duty-truck" class="menu-item menu-item-link menu-item-heavy-duty-truck">
+                                    <a href="/engines/heavy-duty-truck" data-drupal-link-system-path="node/21171">Heavy-Duty Truck</a>
+
+
+
+        </li>
+
+        <li id="menu-item-integrated-power" class="menu-item menu-item-link menu-item-integrated-power">
+                                    <a href="/integrated-power" data-drupal-link-system-path="node/24091">Integrated Power</a>
+
+
+
+        </li>
+
+        <li id="menu-item-light-commercial-vehicle" class="menu-item menu-item-link menu-item-light-commercial-vehicle">
+                                    <a href="/engines/light-commercial-vehicle" data-drupal-link-system-path="node/21176">Light Commercial Vehicle</a>
+
+
+
+        </li>
+
+        <li id="menu-item-auxiliary-engines" class="menu-item menu-item-link menu-item-auxiliary-engines">
+                                    <a href="/engines/marine-auxiliary" data-drupal-link-system-path="node/21226">Marine Auxiliary</a>
+
+
+
+        </li>
+
+        <li id="menu-item-propulsion-engines" class="menu-item menu-item-link menu-item-propulsion-engines">
+                                    <a href="/engines/marine-propulsion" data-drupal-link-system-path="node/21221">Marine Propulsion</a>
+
+
+
+        </li>
+
+        <li id="menu-item-recon-marine" class="menu-item menu-item-link menu-item-recon-marine">
+                                    <a href="/engines/recon-marine" data-drupal-link-system-path="node/21231">Marine ReCon</a>
+
+
+
+        </li>
+
+        <li id="menu-item-medium-duty-truck" class="menu-item menu-item-link menu-item-medium-duty-truck">
+                                    <a href="/engines/medium-duty-truck" data-drupal-link-system-path="node/21181">Medium-Duty Truck</a>
+
+
+
+        </li>
+
+        <li id="menu-item-mining" class="menu-item menu-item-link menu-item-mining">
+                                    <a href="/engines/mining" data-drupal-link-system-path="node/21236">Mining</a>
+
+
+
+        </li>
+
+        <li id="menu-item-motorhome-rv" class="menu-item menu-item-link menu-item-motorhome-rv">
+                                    <a href="/engines/motorhome-and-rv" data-drupal-link-system-path="node/21186">Motorhome &amp; RV</a>
+
+
+
+        </li>
+
+        <li id="menu-item-pickup-truck" class="menu-item menu-item-link menu-item-pickup-truck">
+                                    <a href="/engines/pickup-truck" data-drupal-link-system-path="node/21131">Pickup Truck</a>
+
+
+
+        </li>
+
+        <li id="menu-item-rail" class="menu-item menu-item-link menu-item-rail">
+                                    <a href="/engines/rail" data-drupal-link-system-path="node/21281">Rail</a>
+
+
+
+        </li>
+
+        <li id="menu-item-repower" class="menu-item menu-item-link menu-item-repower">
+                                    <a href="/engines/repower" data-drupal-link-system-path="product/1036">Repower</a>
+
+
+
+        </li>
+
+        <li id="menu-item-school-bus" class="menu-item menu-item-link menu-item-school-bus">
+                                    <a href="/engines/school-bus" data-drupal-link-system-path="node/21191">School Bus</a>
+
+
+
+        </li>
+
+        <li id="menu-item-transit-bus" class="menu-item menu-item-link menu-item-transit-bus">
+                                    <a href="/engines/transit-bus" data-drupal-link-system-path="node/21196">Transit Bus</a>
+
+
+
+        </li>
+
+        <li id="menu-item-well-servicing" class="menu-item menu-item-link menu-item-well-servicing">
+                                    <a href="/engines/well-servicing" data-drupal-link-system-path="node/21276">Well Servicing</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-marine" class="menu-item menu-item-has-children menu-item-link menu-item-marine">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_marine" href="#small-nav_marine">
+              Resources
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_marine" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-marine" class="menu">
+
+        <li id="menu-item-brochures" class="menu-item menu-item-link menu-item-brochures">
+                                    <a href="/brochures" data-drupal-link-system-path="node/23506">Brochures</a>
+
+
+
+        </li>
+
+        <li id="menu-item-technical-documents" class="menu-item menu-item-link menu-item-technical-documents">
+                                    <a href="/manuals-and-technical-documents" data-drupal-link-system-path="node/73">Technical Documents</a>
+
+
+
+        </li>
+
+        <li id="menu-item-case-studies" class="menu-item menu-item-link menu-item-case-studies">
+                                    <a href="/case-studies" data-drupal-link-system-path="node/23346">Case Studies</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-finder2" class="menu-item menu-item-link menu-item-product-finder2">
+                                    <a href="/product-finder" data-drupal-link-system-path="node/21756">Product Finder</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-generators" class="menu-item menu-item-has-children menu-item-link menu-item-generators">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_generators" href="#small-nav_generators">
+              Generators
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_generators" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-generators" class="menu">
+
+        <li id="menu-item-applications" class="menu-item menu-item-has-children menu-item-link menu-item-applications">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_applications" href="#small-nav_applications">
+              Applications
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_applications" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-applications" class="menu">
+
+        <li id="menu-item-cogeneration" class="menu-item menu-item-link menu-item-cogeneration">
+                                    <a href="/generators/cogeneration" data-drupal-link-system-path="node/23691">Cogeneration</a>
+
+
+
+        </li>
+
+        <li id="menu-item-commercial-industrial" class="menu-item menu-item-link menu-item-commercial-industrial">
+                                    <a href="/generators/commercial-industrial" data-drupal-link-system-path="node/23541">Commercial Industrial</a>
+
+
+
+        </li>
+
+        <li id="menu-item-commercial-mobile" class="menu-item menu-item-link menu-item-commercial-mobile">
+                                    <a href="/generators/commercial-mobile" data-drupal-link-system-path="node/23536">Commercial Mobile</a>
+
+
+
+        </li>
+
+        <li id="menu-item-data-centers" class="menu-item menu-item-link menu-item-data-centers">
+                                    <a href="/generators/data-center-dcc-rating" data-drupal-link-system-path="node/23556">Data Centers</a>
+
+
+
+        </li>
+
+        <li id="menu-item-distributed-generation-peaking-power" class="menu-item menu-item-link menu-item-distributed-generation-peaking-power">
+                                    <a href="/generators/distributed-generation-peaking-power" data-drupal-link-system-path="node/23701">Distributed Generation / Peaking Power</a>
+
+
+
+        </li>
+
+        <li id="menu-item-greenhouse" class="menu-item menu-item-link menu-item-greenhouse">
+                                    <a href="/generators/commercial-greenhouse-growers" data-drupal-link-system-path="node/23706">Greenhouse</a>
+
+
+
+        </li>
+
+        <li id="menu-item-healthcare" class="menu-item menu-item-link menu-item-healthcare">
+                                    <a href="/generators/healthcare" data-drupal-link-system-path="node/23711">Healthcare</a>
+
+
+
+        </li>
+
+        <li id="menu-item-high-horsepower-commercial-industrial" class="menu-item menu-item-link menu-item-high-horsepower-commercial-industrial">
+                                    <a href="/generators/high-hp-commercial-industrial" data-drupal-link-system-path="node/23561">High Horsepower Commercial Industrial</a>
+
+
+
+        </li>
+
+        <li id="menu-item-home-standby" class="menu-item menu-item-link menu-item-home-standby">
+                                    <a href="https://homegenerators.cummins.com/">Home Standby</a>
+
+
+
+        </li>
+
+        <li id="menu-item-integrated-power-systems" class="menu-item menu-item-link menu-item-integrated-power-systems">
+                                    <a href="/generators/integrated-power-systems" data-drupal-link-system-path="node/23716">Integrated Power Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-marine-gensets" class="menu-item menu-item-link menu-item-marine-gensets">
+                                    <a href="/generators/marine-gensets" data-drupal-link-system-path="node/23576">Marine</a>
+
+
+
+        </li>
+
+        <li id="menu-item-military-ammps-gsa" class="menu-item menu-item-link menu-item-military-ammps-gsa">
+                                    <a href="/generators/military-ammps-gsa" data-drupal-link-system-path="node/23721">Military / AMMPS / GSA</a>
+
+
+
+        </li>
+
+        <li id="menu-item-mining-gensets" class="menu-item menu-item-link menu-item-mining-gensets">
+                                    <a href="/generators/mining-power-solutions" data-drupal-link-system-path="node/23726">Mining</a>
+
+
+
+        </li>
+
+        <li id="menu-item-oil-gas-gensets" class="menu-item menu-item-link menu-item-oil-gas-gensets">
+                                    <a href="/generators/oil-and-gas" data-drupal-link-system-path="node/23731">Oil &amp; Gas</a>
+
+
+
+        </li>
+
+        <li id="menu-item-prime-power" class="menu-item menu-item-link menu-item-prime-power">
+                                    <a href="/generators/prime-power" data-drupal-link-system-path="node/23736">Prime Power</a>
+
+
+
+        </li>
+
+        <li id="menu-item-recreational-vehicles" class="menu-item menu-item-link menu-item-recreational-vehicles">
+                                    <a href="/generators/motorhome-and-rv" data-drupal-link-system-path="node/23581">Recreational Vehicles</a>
+
+
+
+        </li>
+
+        <li id="menu-item-rental-companies" class="menu-item menu-item-link menu-item-rental-companies">
+                                    <a href="/generators/rental-power-solutions" data-drupal-link-system-path="node/23586">Rental Companies</a>
+
+
+
+        </li>
+
+        <li id="menu-item-small-business-standby" class="menu-item menu-item-link menu-item-small-business-standby">
+                                    <a href="/generators/small-business-standby" data-drupal-link-system-path="node/23591">Small Business Standby</a>
+
+
+
+        </li>
+
+        <li id="menu-item-standby-power" class="menu-item menu-item-link menu-item-standby-power">
+                                    <a href="/generators/standby-power" data-drupal-link-system-path="node/23741">Standby Power</a>
+
+
+
+        </li>
+
+        <li id="menu-item-telecom" class="menu-item menu-item-link menu-item-telecom">
+                                    <a href="/generators/telecom" data-drupal-link-system-path="node/23596">Telecom</a>
+
+
+
+        </li>
+
+        <li id="menu-item-water-treatment" class="menu-item menu-item-link menu-item-water-treatment">
+                                    <a href="/generators/water-treatment" data-drupal-link-system-path="node/23746">Water Treatment</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-related-products-and-services" class="menu-item menu-item-has-children menu-item-link menu-item-related-products-and-services">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_related-products-and-services" href="#small-nav_related-products-and-services">
+              Related Products &amp; Services
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_related-products-and-services" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-related-products-and-services" class="menu">
+
+        <li id="menu-item-paralleling-systems" class="menu-item menu-item-link menu-item-paralleling-systems">
+                                    <a href="/generators/related-products/paralleling-systems" data-drupal-link-system-path="node/23986">Paralleling Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-parts-accessories" class="menu-item menu-item-link menu-item-parts-accessories">
+                                    <a href="/generators/related-products/parts-and-accessories" data-drupal-link-system-path="node/23601">Parts &amp; Accessories</a>
+
+
+
+        </li>
+
+        <li id="menu-item-remote-monitoring-systems" class="menu-item menu-item-link menu-item-remote-monitoring-systems">
+                                    <a href="/generators/related-products/remote-monitoring-systems" data-drupal-link-system-path="node/23991">Remote Monitoring Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-transfer-switches" class="menu-item menu-item-link menu-item-transfer-switches">
+                                    <a href="/generators/related-products/transfer-switches" data-drupal-link-system-path="node/23996">Transfer Switches</a>
+
+
+
+        </li>
+
+        <li id="menu-item-alternators" class="menu-item menu-item-link menu-item-alternators">
+                                    <a href="https://stamford-avk.com/">Alternators</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-uses" class="menu-item menu-item-has-children menu-item-link menu-item-uses">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_uses" href="#small-nav_uses">
+              Resources
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_uses" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-uses" class="menu">
+
+        <li id="menu-item-brochures2" class="menu-item menu-item-link menu-item-brochures2">
+                                    <a href="/brochures" data-drupal-link-system-path="node/23506">Brochures</a>
+
+
+
+        </li>
+
+        <li id="menu-item-technical-documents2" class="menu-item menu-item-link menu-item-technical-documents2">
+                                    <a href="/manuals-and-technical-documents" data-drupal-link-system-path="node/73">Technical Documents</a>
+
+
+
+        </li>
+
+        <li id="menu-item-case-studies2" class="menu-item menu-item-link menu-item-case-studies2">
+                                    <a href="/generator-case-studies" data-drupal-link-system-path="node/24316">Case Studies</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-finder3" class="menu-item menu-item-link menu-item-product-finder3">
+                                    <a href="/product-finder" data-drupal-link-system-path="node/21756">Product Finder</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-components" class="menu-item menu-item-has-children menu-item-link menu-item-components">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_components" href="#small-nav_components">
+              Components
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_components" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-components" class="menu">
+
+        <li id="menu-item-aftertreatment" class="menu-item menu-item-has-children menu-item-link menu-item-aftertreatment">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_aftertreatment" href="#small-nav_aftertreatment">
+              Aftertreatment
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_aftertreatment" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-aftertreatment" class="menu">
+
+        <li id="menu-item-high-horsepower-scr" class="menu-item menu-item-link menu-item-high-horsepower-scr">
+                                    <a href="/components/aftertreatment/high-horsepower-scr" data-drupal-link-system-path="node/226">High-Horsepower SCR</a>
+
+
+
+        </li>
+
+        <li id="menu-item-modular-aftertreatment-systems" class="menu-item menu-item-link menu-item-modular-aftertreatment-systems">
+                                    <a href="/components/aftertreatment/modular-aftertreatment-system" data-drupal-link-system-path="node/231">Modular Aftertreatment Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-single-module" class="menu-item menu-item-link menu-item-single-module">
+                                    <a href="/components/aftertreatment/single-module" data-drupal-link-system-path="node/236">Single Module</a>
+
+
+
+        </li>
+
+        <li id="menu-item-system-fundamentals" class="menu-item menu-item-link menu-item-system-fundamentals">
+                                    <a href="/components/aftertreatment/system-fundamentals" data-drupal-link-system-path="node/216">System Fundamentals</a>
+
+
+
+        </li>
+
+        <li id="menu-item-urea-dosing-technologies" class="menu-item menu-item-link menu-item-urea-dosing-technologies">
+                                    <a href="/components/aftertreatment/urea-dosing-technologies" data-drupal-link-system-path="node/221">Urea Dosing Technologies</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-electronics-fuel-systems" class="menu-item menu-item-has-children menu-item-link menu-item-electronics-fuel-systems">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_electronics-fuel-systems" href="#small-nav_electronics-fuel-systems">
+              Electronics &amp; Fuel Systems
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_electronics-fuel-systems" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-electronics-fuel-systems" class="menu">
+
+        <li id="menu-item-electronics" class="menu-item menu-item-link menu-item-electronics">
+                                    <a href="/components/electronics-fuel-systems/electronics" data-drupal-link-system-path="node/20361">Electronics</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fuel-systems" class="menu-item menu-item-link menu-item-fuel-systems">
+                                    <a href="/components/electronics-fuel-systems/fuel-systems" data-drupal-link-system-path="node/20371">Fuel Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-aftermarket-remanufacturing" class="menu-item menu-item-link menu-item-aftermarket-remanufacturing">
+                                    <a href="/components/electronics-fuel-systems/aftermarket-reman" data-drupal-link-system-path="node/20401">Aftermarket &amp; Remanufacturing</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-filtration" class="menu-item menu-item-has-children menu-item-link menu-item-filtration">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_filtration" href="#small-nav_filtration">
+              Filtration
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_filtration" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-filtration" class="menu">
+
+        <li id="menu-item-air-filtration" class="menu-item menu-item-link menu-item-air-filtration">
+                                    <a href="https://www.cumminsfiltration.com/air">Air Filtration</a>
+
+
+
+        </li>
+
+        <li id="menu-item-crankcase-ventilation" class="menu-item menu-item-link menu-item-crankcase-ventilation">
+                                    <a href="https://www.cumminsfiltration.com/crankcaseventilation">Crankcase Ventilation</a>
+
+
+
+        </li>
+
+        <li id="menu-item-coolants-chemicals" class="menu-item menu-item-link menu-item-coolants-chemicals">
+                                    <a href="https://www.cumminsfiltration.com/ourcoolantsolutions">Coolants &amp; Chemicals</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fluid-analysis" class="menu-item menu-item-link menu-item-fluid-analysis">
+                                    <a href="https://www.cumminsfiltration.com/fluidanalysis">Fluid Analysis</a>
+
+
+
+        </li>
+
+        <li id="menu-item-fuel-filtration" class="menu-item menu-item-link menu-item-fuel-filtration">
+                                    <a href="https://www.cumminsfiltration.com/fuel">Fuel Filtration</a>
+
+
+
+        </li>
+
+        <li id="menu-item-hydraulic-filtration" class="menu-item menu-item-link menu-item-hydraulic-filtration">
+                                    <a href="https://www.cumminsfiltration.com/hydraulics">Hydraulic Filtration</a>
+
+
+
+        </li>
+
+        <li id="menu-item-transmission-filtration" class="menu-item menu-item-link menu-item-transmission-filtration">
+                                    <a href="https://www.cumminsfiltration.com/transmission">Transmission Filtration</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-turbochargers" class="menu-item menu-item-has-children menu-item-link menu-item-turbochargers">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_turbochargers" href="#small-nav_turbochargers">
+              Turbochargers &amp; Air Handling
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_turbochargers" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-turbochargers" class="menu">
+
+        <li id="menu-item-holset-turbochargers" class="menu-item menu-item-link menu-item-holset-turbochargers">
+                                    <a href="/components/holset-turbo-technologies/holset-turbochargers" data-drupal-link-system-path="node/256">Holset Turbochargers</a>
+
+
+
+        </li>
+
+        <li id="menu-item-turbocharger-innovation" class="menu-item menu-item-link menu-item-turbocharger-innovation">
+                                    <a href="/components/holset-turbo-technologies/turbocharger-innovation" data-drupal-link-system-path="node/21026">Turbocharger Innovation</a>
+
+
+
+        </li>
+
+        <li id="menu-item-power-turbines" class="menu-item menu-item-link menu-item-power-turbines">
+                                    <a href="/components/turbo-technologies/power-turbines" data-drupal-link-system-path="node/266">Power Turbines</a>
+
+
+
+        </li>
+
+        <li id="menu-item-two-stage-systems" class="menu-item menu-item-link menu-item-two-stage-systems">
+                                    <a href="/components/turbo-technologies/two-stage-systems" data-drupal-link-system-path="node/271">Two-Stage Systems</a>
+
+
+
+        </li>
+
+        <li id="menu-item-turbo-componentry" class="menu-item menu-item-link menu-item-turbo-componentry">
+                                    <a href="/components/turbo-technologies/turbo-componentry" data-drupal-link-system-path="node/326">Turbo Componentry</a>
+
+
+
+        </li>
+
+        <li id="menu-item-holset-aftermarket" class="menu-item menu-item-link menu-item-holset-aftermarket">
+                                    <a href="/components/turbo-technologies/aftermarket" data-drupal-link-system-path="node/281">Holset Aftermarket</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-brochures" class="menu-item menu-item-link menu-item-product-brochures">
+                                    <a href="/components/turbo-technologies/brochures" data-drupal-link-system-path="node/276">Product Brochures</a>
+
+
+
+        </li>
+
+        <li id="menu-item-distributor-partner-zone" class="menu-item menu-item-link menu-item-distributor-partner-zone">
+                                    <a href="/components/turbo-technologies/partner-zone" data-drupal-link-system-path="node/286">Distributor Partner Zone</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-electrified-power" class="menu-item menu-item-has-children menu-item-link menu-item-electrified-power">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_electrified-power" href="#small-nav_electrified-power">
+              Electrified Power
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_electrified-power" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-electrified-power" class="menu">
+
+        <li id="menu-item-the-power-to-deliver2" class="menu-item menu-item-text_link menu-item-the-power-to-deliver2">
+                                    <a href="/node/117" data-drupal-link-system-path="node/117">The Power to Deliver</a>
+
+
+                                <div class="menu-item-text-link">
+                    <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Cummins will be the leading provider of electrified power in our commercial and industrial markets just as we are the leader in diesel and natural gas powered products.</p>
+
+<p>Cummins will provide the entire electrified power solution, as well as some of the most critical components that have the largest impact on performance, quality and power of the system to deliver the most value to our customers. Our Battery Electric Vehicle (BEV) system launches in 2019 for bus, and our Range Extended Electric Vehicle (REEV) system launches in 2020 for bus. Additional offerings for various other applications are soon to follow.</p>
+
+<p><a href="/electrification">Learn More</a></p>
+
+            </div>
+          </div>
+
+
+            </div>
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-product-finder" class="menu-item menu-item-link menu-item-product-finder">
+                                    <a href="/product-finder" data-drupal-link-system-path="node/21756">Product Finder</a>
+
+
+
+        </li>
+
+                      </ul>
+                    </div>
+                                </div>
+                          <div class="small-nav_menu_section">
+                <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_parts-and-service" href="#small-nav_parts-and-service">
+                  Parts &amp; Service
+                  <span class="toggle-icon"></span>
+                </button>
+                                      <div class="small-nav_menu_links collapse" id="small-nav_parts-and-service" role="tabpanel" data-parent="#small-nav_menu">
+                      <ul id="menu-mega-nav-parts-and-service" class="menu">
+
+        <li id="menu-item-sales-and-service" class="menu-item menu-item-has-children menu-item-link menu-item-sales-and-service">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_sales-and-service" href="#small-nav_sales-and-service">
+              Sales &amp; Service
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_sales-and-service" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-sales-and-service" class="menu">
+
+        <li id="menu-item-find-a-local-dealer" class="menu-item menu-item-link menu-item-find-a-local-dealer">
+                                    <a href="https://locator.cummins.com">Find a Local Dealer or Distributor</a>
+
+
+
+        </li>
+
+        <li id="menu-item-request-a-sales-quote" class="menu-item menu-item-link menu-item-request-a-sales-quote">
+                                    <a href="/sales-and-service#rfq-title" data-drupal-link-system-path="node/71">Request a Sales Quote</a>
+
+
+
+        </li>
+
+        <li id="menu-item-find-a-coach-care-service-center" class="menu-item menu-item-link menu-item-find-a-coach-care-service-center">
+                                    <a href="/service/coach-care">Find a Coach Care RV Service Center</a>
+
+
+
+        </li>
+
+        <li id="menu-item-contact-customer-assistance" class="menu-item menu-item-link menu-item-contact-customer-assistance">
+                                    <a href="/customer-assistance" data-drupal-link-system-path="node/20251">Contact Customer Assistance</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-parts" class="menu-item menu-item-has-children menu-item-link menu-item-parts">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_parts" href="#small-nav_parts">
+              Parts
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_parts" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-parts" class="menu">
+
+        <li id="menu-item-find-a-local-dealer-parts" class="menu-item menu-item-link menu-item-find-a-local-dealer-parts">
+                                    <a href="https://locator.cummins.com">Find a Local Dealer or Distributor</a>
+
+
+
+        </li>
+
+        <li id="menu-item-request-a-sales-quote2" class="menu-item menu-item-link menu-item-request-a-sales-quote2">
+                                    <a href="/sales-and-service#rfq-title" data-drupal-link-system-path="node/71">Request a Sales Quote</a>
+
+
+
+        </li>
+
+        <li id="menu-item-benefits-of-genuine-cummins-parts" class="menu-item menu-item-link menu-item-benefits-of-genuine-cummins-parts">
+                                    <a href="/parts/benefits" data-drupal-link-system-path="node/316">Benefits of Genuine Cummins Parts</a>
+
+
+
+        </li>
+
+        <li id="menu-item-diesel-particulate-filters-dpf-" class="menu-item menu-item-link menu-item-diesel-particulate-filters-dpf-">
+                                    <a href="/parts/diesel-particulate-filters" data-drupal-link-system-path="node/321">Diesel Particulate Filters (DPF)</a>
+
+
+
+        </li>
+
+        <li id="menu-item-recon-engines-and-parts" class="menu-item menu-item-link menu-item-recon-engines-and-parts">
+                                    <a href="/parts/recon" data-drupal-link-system-path="node/296">ReCon Engines &amp; Parts</a>
+
+
+
+        </li>
+
+        <li id="menu-item-order-parts-online" class="menu-item menu-item-link menu-item-order-parts-online">
+                                    <a href="https://parts.cummins.com">Find Parts Online</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-manuals-technical-documents" class="menu-item menu-item-has-children menu-item-link menu-item-manuals-technical-documents">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_manuals-technical-documents" href="#small-nav_manuals-technical-documents">
+              Manuals &amp; Technical Documents
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_manuals-technical-documents" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-manuals-technical-documents" class="menu">
+
+        <li id="menu-item-find-a-local-dealer-documents" class="menu-item menu-item-link menu-item-find-a-local-dealer-documents">
+                                    <a href="https://locator.cummins.com">Find a Local Dealer or Distributor</a>
+
+
+
+        </li>
+
+        <li id="menu-item-find-documents-online" class="menu-item menu-item-link menu-item-find-documents-online">
+                                    <a href="https://quickserve.cummins.com">Find Documents Online</a>
+
+
+
+        </li>
+
+        <li id="menu-item-contact-customer-assistance-documents" class="menu-item menu-item-link menu-item-contact-customer-assistance-documents">
+                                    <a href="/customer-assistance" data-drupal-link-system-path="node/20251">Contact Customer Assistance</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-digital-products-services" class="menu-item menu-item-has-children menu-item-link menu-item-digital-products-services">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_digital-products-services" href="#small-nav_digital-products-services">
+              Digital Products &amp; Services
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_digital-products-services" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-digital-products-services" class="menu">
+
+        <li id="menu-item-connected-diagnostics" class="menu-item menu-item-link menu-item-connected-diagnostics">
+                                    <a href="/parts-and-service/digital-products-and-services/connected-diagnostics" data-drupal-link-system-path="node/19026">Connected Diagnostics</a>
+
+
+
+        </li>
+
+        <li id="menu-item-eds" class="menu-item menu-item-link menu-item-eds">
+                                    <a href="/parts-and-service/digital-products-and-services/expert-diagnostic-system-eds" data-drupal-link-system-path="node/19041">EDS</a>
+
+
+
+        </li>
+
+        <li id="menu-item-guidanz" class="menu-item menu-item-link menu-item-guidanz">
+                                    <a href="/parts-and-service/digital-products-and-services/guidanz" data-drupal-link-system-path="node/19056">Guidanz</a>
+
+
+
+        </li>
+
+        <li id="menu-item-incal" class="menu-item menu-item-link menu-item-incal">
+                                    <a href="/parts-and-service/digital-products-and-services/incal" data-drupal-link-system-path="node/19076">Incal</a>
+
+
+
+        </li>
+
+        <li id="menu-item-inline" class="menu-item menu-item-link menu-item-inline">
+                                    <a href="/parts-and-service/digital-products-and-services/inline" data-drupal-link-system-path="node/19086">Inline</a>
+
+
+
+        </li>
+
+        <li id="menu-item-insite" class="menu-item menu-item-link menu-item-insite">
+                                    <a href="/parts-and-service/digital-products-and-services/insite" data-drupal-link-system-path="node/19186">Insite</a>
+
+
+
+        </li>
+
+        <li id="menu-item-powerspec" class="menu-item menu-item-link menu-item-powerspec">
+                                    <a href="/parts-and-service/digital-products-and-services/powerspec" data-drupal-link-system-path="node/19161">Powerspec</a>
+
+
+
+        </li>
+
+        <li id="menu-item-view-all" class="menu-item menu-item-link menu-item-view-all">
+                                    <a href="/parts-and-service/digital-products-and-services" data-drupal-link-system-path="node/18986">View All</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+                      </ul>
+                    </div>
+                                </div>
+                          <div class="small-nav_menu_section">
+                <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_about" href="#small-nav_about">
+                  About
+                  <span class="toggle-icon"></span>
+                </button>
+                                      <div class="small-nav_menu_links collapse" id="small-nav_about" role="tabpanel" data-parent="#small-nav_menu">
+                      <ul id="menu-mega-nav-about" class="menu">
+
+        <li id="menu-item-our-company" class="menu-item menu-item-has-children menu-item-link menu-item-our-company">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_our-company" href="#small-nav_our-company">
+              Our Company
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_our-company" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-our-company" class="menu">
+
+        <li id="menu-item-cummins-overview" class="menu-item menu-item-link menu-item-cummins-overview">
+                                    <a href="/company/overview" data-drupal-link-system-path="node/48">Cummins Overview</a>
+
+
+
+        </li>
+
+        <li id="menu-item-mission-vision-and-values" class="menu-item menu-item-link menu-item-mission-vision-and-values">
+                                    <a href="/company/mission-vision-values" data-drupal-link-system-path="node/101">Mission, Vision &amp; Values</a>
+
+
+
+        </li>
+
+        <li id="menu-item-always-on" class="menu-item menu-item-link menu-item-always-on">
+                                    <a href="/always-on" data-drupal-link-system-path="node/20981">Always On</a>
+
+
+
+        </li>
+
+        <li id="menu-item-innovation" class="menu-item menu-item-link menu-item-innovation">
+                                    <a href="/company/innovation" data-drupal-link-system-path="node/57">Innovation</a>
+
+
+
+        </li>
+
+        <li id="menu-item-global-impact" class="menu-item menu-item-link menu-item-global-impact">
+                                    <a href="/company/global-impact" data-drupal-link-system-path="node/100">Global Impact</a>
+
+
+
+        </li>
+
+        <li id="menu-item-history" class="menu-item menu-item-link menu-item-history">
+                                    <a href="/company/history" data-drupal-link-system-path="node/36">History</a>
+
+
+
+        </li>
+
+        <li id="menu-item-leadership" class="menu-item menu-item-link menu-item-leadership">
+                                    <a href="/company/old-leadership" data-drupal-link-system-path="node/70">Leadership</a>
+
+
+
+        </li>
+
+        <li id="menu-item-ethics-compliance" class="menu-item menu-item-link menu-item-ethics-compliance">
+                                    <a href="/company/ethics-and-compliance" data-drupal-link-system-path="node/53">Ethics &amp; Compliance</a>
+
+
+
+        </li>
+
+        <li id="menu-item-corporate-governance" class="menu-item menu-item-link menu-item-corporate-governance">
+                                    <a href="/company/corporate-governance" data-drupal-link-system-path="node/52">Corporate Governance</a>
+
+
+
+        </li>
+
+        <li id="menu-item-clubs-merchandise" class="menu-item menu-item-link menu-item-clubs-merchandise">
+                                    <a href="/company/clubs-and-merchandise" data-drupal-link-system-path="node/50">Clubs &amp; Merchandise</a>
+
+
+
+        </li>
+
+        <li id="menu-item-global-websites" class="menu-item menu-item-link menu-item-global-websites">
+                                    <a href="/company/global-websites" data-drupal-link-system-path="node/341">Global Websites</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+        <li id="menu-item-investor-relations" class="menu-item menu-item-has-children menu-item-link menu-item-investor-relations">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_investor-relations" href="#small-nav_investor-relations">
+              Investor Relations
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_investor-relations" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-investor-relations" class="menu">
+
+        <li id="menu-item-investor-overview" class="menu-item menu-item-link menu-item-investor-overview">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.199184303.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=irol-irhome">Investor Overview</a>
+
+
+
+        </li>
+
+        <li id="menu-item-financial-information" class="menu-item menu-item-link menu-item-financial-information">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.199184303.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=irol-reportsannual">Financial Information</a>
+
+
+
+        </li>
+
+        <li id="menu-item-governance-documents" class="menu-item menu-item-link menu-item-governance-documents">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.199184303.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=irol-govHighlights">Governance Documents</a>
+
+
+
+        </li>
+
+        <li id="menu-item-investor-contacts" class="menu-item menu-item-link menu-item-investor-contacts">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.156143163.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=irol-contact">Investor Contacts</a>
+
+
+
+        </li>
+
+        <li id="menu-item-investor-resources" class="menu-item menu-item-link menu-item-investor-resources">
+                                    <a href="http://investor.cummins.com/phoenix.zhtml?_ga=2.156143163.1224863398.1542396361-286602115.1516397680&amp;c=112916&amp;p=proxy">Investor Resources</a>
+
+
+
+        </li>
+
+        <li id="menu-item-annual-meeting-materials" class="menu-item menu-item-link menu-item-annual-meeting-materials">
+                                    <a href="https://www.cummins.com/investor-relations/annual-meeting-materials">Annual Meeting Materials</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+                      </ul>
+                    </div>
+                                </div>
+                          <div class="small-nav_menu_section">
+                <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_news" href="#small-nav_news">
+                  News
+                  <span class="toggle-icon"></span>
+                </button>
+                                      <div class="small-nav_menu_links collapse" id="small-nav_news" role="tabpanel" data-parent="#small-nav_menu">
+                      <ul id="menu-mega-nav-news" class="menu">
+
+        <li id="menu-item-newsroom" class="menu-item menu-item-text_link menu-item-newsroom">
+                                    <a href="/news" data-drupal-link-system-path="news">Newsroom</a>
+
+
+                                <div class="menu-item-text-link">
+                    <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Feature stories and news releases about Cummins people, technology and culture.</p>
+
+<p><a href="/news">Visit the Newsroom</a></p>
+
+            </div>
+          </div>
+
+
+            </div>
+
+        </li>
+
+        <li id="menu-item-media-contacts" class="menu-item menu-item-text_link menu-item-media-contacts">
+                                    <a href="/news/media-contacts" data-drupal-link-system-path="node/60">Media Contacts</a>
+
+
+                                <div class="menu-item-text-link">
+                    <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Corporate media team contacts for interview requests and media assistance.</p>
+
+<p><a href="/media-contacts">View Contacts</a></p>
+
+            </div>
+          </div>
+
+
+            </div>
+
+        </li>
+
+        <li id="menu-item-press-resources" class="menu-item menu-item-text_link menu-item-press-resources">
+                                    <a href="/press-resources" data-drupal-link-system-path="node/436">Press Resources</a>
+
+
+                                <div class="menu-item-text-link">
+                    <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>News release library, event calendar, social links and newsletter subscriptions.</p>
+
+<p><a href="/press-resources">Access Resources</a></p>
+
+            </div>
+          </div>
+
+
+            </div>
+
+        </li>
+
+                      </ul>
+                    </div>
+                                </div>
+                          <div class="small-nav_menu_section">
+                <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_careers" href="#small-nav_careers">
+                  Careers
+                  <span class="toggle-icon"></span>
+                </button>
+                                        <div class="small-nav_menu_links collapse" id="small-nav_careers" role="tabpanel" data-parent="#small-nav_menu">
+                          <ul id="menu-mega-nav-careers" class="menu">
+                              <a href="https://careers.cummins.com">Careers</a>
+                          </ul>
+                      </div>
+                                </div>
+                          <div class="small-nav_menu_section">
+                <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_support" href="#small-nav_support">
+                  Support
+                  <span class="toggle-icon"></span>
+                </button>
+                                      <div class="small-nav_menu_links collapse" id="small-nav_support" role="tabpanel" data-parent="#small-nav_menu">
+                      <ul id="menu-mega-nav-support" class="menu">
+
+        <li id="menu-item-customer-assistance" class="menu-item menu-item-text_link menu-item-customer-assistance">
+                                    <a href="/customer-assistance" data-drupal-link-system-path="node/20251">Customer Assistance</a>
+
+
+                                <div class="menu-item-text-link">
+                    <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Search our solutions database or contact Cummins Care via phone or online form.</p>
+
+<p><a href="/customer-assistance">Ask Cummins Care</a></p>
+
+            </div>
+          </div>
+
+
+            </div>
+
+        </li>
+
+        <li id="menu-item-sales-service-locator" class="menu-item menu-item-text_link menu-item-sales-service-locator">
+                                    <a href="https://locator.cummins.com">Sales &amp; Service Locator</a>
+
+
+                                <div class="menu-item-text-link">
+                    <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Find a local dealer or distributor for assistance with your Cummins sales or service needs.</p>
+
+<p><a href="https://locator.cummins.com">Find a Local Dealer</a></p>
+
+            </div>
+          </div>
+
+
+            </div>
+
+        </li>
+
+        <li id="menu-item-digital-products-services-support" class="menu-item menu-item-text_link menu-item-digital-products-services-support">
+                                    <a href="/support/digital-products-and-services-support" data-drupal-link-system-path="node/18971">Digital Products &amp; Services Support</a>
+
+
+                                <div class="menu-item-text-link">
+                    <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Download software updates, review FAQs and troubleshooting, get licensing support and more.</p>
+
+<p><a href="/support/digital-products-and-services-support">Access Digital Tools</a></p>
+
+            </div>
+          </div>
+
+
+            </div>
+
+        </li>
+
+        <li id="menu-item-online-rfq" class="menu-item menu-item-text_link menu-item-online-rfq">
+                                    <a href="/sales-and-service#rfq-title" data-drupal-link-system-path="node/71">Online RFQ</a>
+
+
+                                <div class="menu-item-text-link">
+                    <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>Get pricing for new Cummins engines, generators, components, parts or service.</p>
+
+<p><a href="/sales-and-service#rfq-title">Request a Quote</a></p>
+
+            </div>
+          </div>
+
+
+            </div>
+
+        </li>
+
+        <li id="menu-item-additional-links" class="menu-item menu-item-has-children menu-item-link menu-item-additional-links">
+
+                      <button class="small-nav_menu_toggle collapsed" data-toggle="collapse" data-parent="#small-nav_menu" aria-expanded="false" aria-controls="small-nav_additional-links" href="#small-nav_additional-links">
+              Additional Links
+              <span class="toggle-icon"></span>
+            </button>
+            <div class="small-nav_menu_links collapse" id="small-nav_additional-links" role="tabpanel" data-parent="#small-nav_menu">
+              <ul id="menu-mega-nav-additional-links" class="menu">
+
+        <li id="menu-item-warranty-information" class="menu-item menu-item-link menu-item-warranty-information">
+                                    <a href="/support/warranty" data-drupal-link-system-path="node/21886">Warranty Information</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-support-information" class="menu-item menu-item-link menu-item-product-support-information">
+                                    <a href="/support/product-support-information" data-drupal-link-system-path="node/21891">Product Support Information</a>
+
+
+
+        </li>
+
+        <li id="menu-item-product-registration" class="menu-item menu-item-link menu-item-product-registration">
+                                    <a href="/support/product-registration" data-drupal-link-system-path="node/201">Product Registration</a>
+
+
+
+        </li>
+
+              </ul>
+            </div>
+
+
+        </li>
+
+                      </ul>
+                    </div>
+                                </div>
+                      </div>
+        </div>
+      </div>
+
+
+
+  </div>
+
+  </div>
+
+                    </div>
+                    <div class="section section-secondary-menu">
+                          <div class="region region-secondary-menu">
+    <nav role="navigation" aria-labelledby="block-countryregion-menu" id="block-countryregion" class="block block-menu navigation menu--country-region">
+
+  <h2 id="block-countryregion-menu">Country/Region</h2>
+
+
+
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="http://africa.cummins.com/" title="Africa">Africa</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cummins.com.ar/" title="Argentina">Argentina</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://cummins.com.bo/" title="Bolivia">Bolivia</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cummins.com.br/" title="Brazil">Brazil</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://cummins.com.cn/" title="China">China</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://cumminseurope.com/" title="Europe">Europe</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cumminsindia.com/" title="India">India</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cummins.jp/" title="Japan">Japan</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cummins.co.kr" title="Korea">Korea</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://cummins.com.my/" title="Malaysia">Malaysia</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cummins.com.mx/" title="Mexico">Mexico</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://middleeast.cummins.com/" title="Middle East">Middle East</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://cummins.com.py/" title="Paraguay">Paraguay</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://cummins.com.ph/" title="Philippines ">Philippines </a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cummins.ru/" title="Russia">Russia</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://cummins.com.sg/">Singapore</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cummins.com.au/" title="South Pacific">South Pacific</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.cummins.com.uy/" title="Uruguay">Uruguay</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://salesandservice.cummins.com">US &amp; Canada Sales &amp; Service</a>
+              </li>
+        </ul>
+
+
+
+  </nav>
+<div class="views-exposed-form bef-exposed-form block block-views block-views-exposed-filter-blocksearch-page-1" data-drupal-selector="views-exposed-form-search-page-1" id="block-exposedformsearchpage-1">
+
+
+      <form action="/search" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-search-api-fulltext form-item-search-api-fulltext form-no-label">
+        <input placeholder="Search" data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext" name="search_api_fulltext" value="" size="30" maxlength="128" class="form-text" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</div>
+
+</form>
+
+  </div>
+
+  </div>
+
+                    </div>
+                </div>
+            </header>
+
+              <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+
+
+<div id="main-wrapper" class="layout-main-wrapper">
+  <div id="main" class="layout-main">
+    <main id="content" class="column main-content full-width" role="main">
+      <section class="section section-main-content">
+          <div class="region region-content">
+
+<div id="block-cummins-content" class="block block-system block-system-main-block">
+
+
+
+<div data-history-node-id="24511" role="article" about="/homepage" class="node node--type-homepage node--view-mode-full clearfix">
+
+
+    <div class="homepage__slideshow" id="homepageSlideshow">
+                    <div class="homepage-slick">
+                      <div class="homepage-slide-show__slide">
+              <figure class="homepage-slide-show__image" style="background-image:url(/sites/default/files/2018-11/always-on-mining-site-and-truck_0.jpg);">
+        </figure>
+                    <div class="homepage-slide-show__title-wrap" data-slide-link="/always-on">
+          <div class="homepage-slide-show__category">
+            <h4>            Always On
+      </h4>
+          </div>
+          <div class="homepage-slide-show__title">
+            <h3>    <div class="field field--name-field-slide-title field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        Leading with innovation and dependability
+            </div>
+          </div>
+</h3>
+          </div>
+          <div class="homepage-slide-show__description">
+            <p>
+                          See what Cummins is doing to power an Always On world.
+
+            </p>
+          </div>
+          <div class="homepage-slide-show__link-button">
+            <button class="button button--red button--small button--hover-lighten">
+              Learn More
+            </button>
+          </div>
+        </div>
+          </div>
+
+                    <div class="homepage-slide-show__slide">
+              <div class="homepage-slide-show__video-sizer">
+          <video class="homepage-slide-show__video" muted autoplay loop src="/sites/default/files/2018-11/Roller_10%20seconds_0_1.mp4">
+          </video>
+        </div>
+        <!-- /.homepage-slide-show__video-sizer -->
+                    <div class="homepage-slide-show__title-wrap" data-slide-link="/engines/construction">
+          <div class="homepage-slide-show__category">
+            <h4>            Construction Engines
+      </h4>
+          </div>
+          <div class="homepage-slide-show__title">
+            <h3>    <div class="field field--name-field-slide-title field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        Do More With Less
+            </div>
+          </div>
+</h3>
+          </div>
+          <div class="homepage-slide-show__description">
+            <p>
+                          Your job site needs more power, less hassle. Cummins powers construction around the globe.
+
+            </p>
+          </div>
+          <div class="homepage-slide-show__link-button">
+            <button class="button button--red button--small button--hover-lighten">
+              See Engines
+            </button>
+          </div>
+        </div>
+          </div>
+
+                    <div class="homepage-slide-show__slide">
+              <figure class="homepage-slide-show__image" style="background-image:url(/sites/default/files/2018-11/girls-mountains-slider_0.jpg);">
+        </figure>
+                    <div class="homepage-slide-show__title-wrap" data-slide-link="/news/2018/03/08/new-cummins-powers-women-program-accelerate-advancement-women-and-girls-around">
+          <div class="homepage-slide-show__category">
+            <h4>            In the Community
+      </h4>
+          </div>
+          <div class="homepage-slide-show__title">
+            <h3>    <div class="field field--name-field-slide-title field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        New Initiative to Empower Girls Around the World
+            </div>
+          </div>
+</h3>
+          </div>
+          <div class="homepage-slide-show__description">
+            <p>
+                          Cummins Powers Women is our most ambitious community program ever.
+
+            </p>
+          </div>
+          <div class="homepage-slide-show__link-button">
+            <button class="button button--red button--small button--hover-lighten">
+              Read More
+            </button>
+          </div>
+        </div>
+          </div>
+
+                    <div class="homepage-slide-show__slide">
+              <figure class="homepage-slide-show__image" style="background-image:url(/sites/default/files/2018-11/diversity-slider_0.jpg);">
+        </figure>
+                    <div class="homepage-slide-show__title-wrap" data-slide-link="/news/releases/2018/05/23/cummins-named-top-company-diversity-12th-straight-year">
+          <div class="homepage-slide-show__category">
+            <h4>            Culture
+      </h4>
+          </div>
+          <div class="homepage-slide-show__title">
+            <h3>    <div class="field field--name-field-slide-title field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        DiversityInc. Names Cummins a Top 50 Company for Diversity
+            </div>
+          </div>
+</h3>
+          </div>
+          <div class="homepage-slide-show__description">
+            <p>
+                          Cummins ranked 12th on the 2018 list of more than 1,000 participating companies.
+
+            </p>
+          </div>
+          <div class="homepage-slide-show__link-button">
+            <button class="button button--red button--small button--hover-lighten">
+              Learn More
+            </button>
+          </div>
+        </div>
+          </div>
+
+                    <div class="homepage-slide-show__slide">
+              <figure class="homepage-slide-show__image" style="background-image:url(/sites/default/files/2018-11/electrification-powered-vehicles-in-garage_0.jpg);">
+        </figure>
+                    <div class="homepage-slide-show__title-wrap" data-slide-link="/electrification">
+          <div class="homepage-slide-show__category">
+            <h4>            Electrified Power
+      </h4>
+          </div>
+          <div class="homepage-slide-show__title">
+            <h3>    <div class="field field--name-field-slide-title field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        Powering what’s next
+            </div>
+          </div>
+</h3>
+          </div>
+          <div class="homepage-slide-show__description">
+            <p>
+                          Cutting-edge fully electric and hybrid solutions for a world that&#039;s Always On.
+
+            </p>
+          </div>
+          <div class="homepage-slide-show__link-button">
+            <button class="button button--red button--small button--hover-lighten">
+              Read More
+            </button>
+          </div>
+        </div>
+          </div>
+
+
+  </div>
+
+
+    </div>
+
+    <div class="homepage__ctas">
+                    <div class="homepage-cta" style="background-image:url('/sites/default/files/2018-11/product-finder-50-percent-button_4.png');">
+    <div class="homepage-cta__background homepage-cta__primary">
+      <a href="/product-finder">
+        <span class="homepage-cta__title">
+                      Product Finder
+
+        </span>
+        <span class="homepage-cta__link_title">
+          View Our Products
+        </span>
+        <span class="homepage-cta__arrow"></span>
+      </a>
+    </div>
+  </div>
+
+                <div class="homepage-cta" style="background-image:url('/sites/default/files/2018-11/technical-documents-25-percent-button_0.png');">
+    <div class="homepage-cta__background">
+      <a href="/manuals-and-technical-documents">
+        <span class="homepage-cta__title">
+                      Manuals and Technical Documents
+
+        </span>
+        <span class="homepage-cta__link_title">
+          Find Resources
+        </span>
+        <span class="homepage-cta__arrow"></span>
+      </a>
+    </div>
+  </div>
+
+                <div class="homepage-cta" style="background-image:url('/sites/default/files/2018-11/customer-support-25-percent-button_0.png');">
+    <div class="homepage-cta__background">
+      <a href="/customer-assistance">
+        <span class="homepage-cta__title">
+                      Customer Support
+
+        </span>
+        <span class="homepage-cta__link_title">
+          Contact Us
+        </span>
+        <span class="homepage-cta__arrow"></span>
+      </a>
+    </div>
+  </div>
+
+
+    </div>
+</div>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockspotlight-section-block-3" id="block-views-block-spotlight-section-block-3">
+
+
+      <div><div class="view view-spotlight-section view-id-spotlight_section view-display-id-block_3 js-view-dom-id-4c60c90bfa512e56762c06884b92a748c64576cec5b49a9e2de1ee693de5a9aa">
+
+
+
+      <div class="view-content">
+      <div class="item-list">
+
+  <ul>
+
+          <li>
+<article data-history-node-id="20" role="article" about="/node/20" class="node node--type-spotlight-section node--view-mode-spotlight-two clearfix">
+
+
+
+  <div class="node__content clearfix">
+        <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
+                <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/convenient-online-access-selected-homepage-service-hero.jpg?itok=Hk85UHZb" width="510" height="450" alt="Parts Team Helping Customers" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="https://www.cummins.com/parts">Genuine Parts Catalog</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="https://www.cummins.com/parts" title="Convenient online access to Genuine Cummins parts">Convenient online access to Genuine Cummins parts</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="https://www.cummins.com/parts" title="Convenient online access to Genuine Cummins parts">parts.cummins.com is your source for parts for more than 15&nbsp;million Cummins products.</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="/parts">Get Your Parts</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+                  <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/world-class-service-selected-homepage-service-hero.jpg?itok=Tn6jG_ZQ" width="510" height="450" alt="Cummins Care Team Members Assisting Customers" title="Cummins Care Team Members Assisting Customers" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="https://www.cummins.com/customer-assistance">Customer Assistance</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="https://www.cummins.com/customer-assistance" title="Providing world-class service – anytime, anywhere">Providing world-class service &ndash; anytime, anywhere</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="https://www.cummins.com/customer-assistance" title="Providing world-class service – anytime, anywhere">The Cummins Care team is available 24 hours a day to assist you with product questions and service needs.</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="/customer-assistance">Contact Us</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+                  <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/detailed-product-information-service-selected-homepage-serice-hero.jpg?itok=wXj9BlB2" width="510" height="450" alt="Cummins Sales and Service Manuals" title="Cummins Sales and Service Manuals" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="https://www.cummins.com/manuals-and-technical-documents">Manuals and Documents</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="https://www.cummins.com/manuals-and-technical-documents" title="Detailed product information at your fingertips">Detailed product information at your fingertips</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="https://www.cummins.com/manuals-and-technical-documents" title="Detailed product information at your fingertips">Find the manuals, specs and diagrams you need to get the most out of your Cummins products.</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="/manuals-and-technical-documents">Find Product Sheets</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+          </div>
+
+  </div>
+</article>
+</li>
+
+  </ul>
+
+</div>
+
+    </div>
+
+          </div>
+</div>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockspotlight-section-block-4" id="block-views-block-spotlight-section-block-4">
+
+
+      <div><div class="view view-spotlight-section view-id-spotlight_section view-display-id-block_4 js-view-dom-id-c8c3a14755c0392a2edae1def06eaff7958b20228b42ba3558014e9a86b1b713">
+
+
+
+      <div class="view-content">
+      <div class="item-list">
+
+  <ul>
+
+          <li>
+<article data-history-node-id="21" role="article" about="/node/21" class="node node--type-spotlight-section node--view-mode-spotlight-two clearfix">
+
+
+
+  <div class="node__content clearfix">
+        <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
+                <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/global-power-leader-selected-homepage-investors-hero.jpg?itok=Jwe4SBK7" width="510" height="450" alt="Tom Linebarger at Distribution Headquarters Opening" title="Tom Linebarger at Distribution Headquarters Opening" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="http://investor.cummins.com/phoenix.zhtml?_ga=1.176350310.2145342855.1492094312&amp;c=112916&amp;p=irol-irhome">investor overview</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="http://investor.cummins.com/phoenix.zhtml?_ga=1.176350310.2145342855.1492094312&amp;c=112916&amp;p=irol-irhome" title="A global power leader poised for continued growth">A global power leader poised for continued growth</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="http://investor.cummins.com/phoenix.zhtml?_ga=1.176350310.2145342855.1492094312&amp;c=112916&amp;p=irol-irhome" title="A global power leader poised for continued growth">Serving customers in 190 countries, Cummins sales reached $20.4 billion in 2017.</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="http://investor.cummins.com/phoenix.zhtml?_ga=1.176350310.2145342855.1492094312&amp;c=112916&amp;p=irol-irhome">Get more info</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+                  <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/vision-mission-selected-homepage-investors-hero.jpg?itok=-wFrIcVK" width="510" height="450" alt="Cummins Brand Signage" title="Cummins Brand Signage" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="https://www.cummins.com/company/vision-mission-values">Our vision</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="https://www.cummins.com/company/vision-mission-values" title="Innovating for our customers to power their success">Innovating for our customers to power their success</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="https://www.cummins.com/company/vision-mission-values" title="Innovating for our customers to power their success">That simple, yet ambitious, statement serves as Cummins&rsquo; guiding vision.</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="/company/vision-mission-values">Explore Our Principles</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+                  <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/healthier-communities-selected-homepage-investors-hero.jpg?itok=Yo5ElD2N" width="510" height="450" alt="Cummins Improves the Quality and Alignment of Educational Systems" title="Cummins Improves the Quality and Alignment of Educational Systems" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="https://www.cummins.com/company/global-impact">global impact</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="https://www.cummins.com/company/global-impact" title="Contributing to healthier communities around the world">Contributing to healthier communities around the world</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="https://www.cummins.com/company/global-impact" title="Contributing to healthier communities around the world">Cummins focuses resources on global priorities of environment, education and social justice.</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="/company/global-impact">Read About Our Efforts</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+          </div>
+
+  </div>
+</article>
+</li>
+
+  </ul>
+
+</div>
+
+    </div>
+
+          </div>
+</div>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockspotlight-section-block-5" id="block-views-block-spotlight-section-block-5">
+
+
+      <div><div class="view view-spotlight-section view-id-spotlight_section view-display-id-block_5 js-view-dom-id-0e32b3c196ec0d34760fbc3f97efd0857388fe1f66f4c1f2072671da5bbc5568">
+
+
+
+      <div class="view-content">
+      <div class="item-list">
+
+  <ul>
+
+          <li>
+<article data-history-node-id="22" role="article" about="/node/22" class="node node--type-spotlight-section node--view-mode-spotlight-two clearfix">
+
+
+
+  <div class="node__content clearfix">
+        <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
+                <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/our-strength-selected-homepage-careers-hero.jpg?itok=6Nj5CEQ4" width="510" height="450" alt="Cummins Turbo Technologies Employees" title="Cummins Turbo Technologies Employees" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="http://careers.cummins.com/">career opportunities</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="http://careers.cummins.com/" title="Our strength comes from the collective talent of our people">Our strength comes from the collective talent of our people</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="http://careers.cummins.com/" title="Our strength comes from the collective talent of our people">Cummins employs more than 58,600 team members across six continents. Ready to join us?</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="http://careers.cummins.com/">Find Your Opportunity</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+                  <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/commitment-to-diversity-selected-homepage-careers-hero.jpg?itok=xXN8G-tM" width="510" height="450" alt="Cummins Employee Portrait" title="Cummins Employee Portrait" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="https://www.cummins.com/company/global-impact/diversity">diversity</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="https://www.cummins.com/company/global-impact/diversity" title="A companywide commitment to diversity and inclusion">A companywide commitment to diversity and inclusion</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="https://www.cummins.com/company/global-impact/diversity" title="A companywide commitment to diversity and inclusion">Cummins employees accept the diversity of peers so everyone feels welcome in the workplace.</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="/company/global-impact/diversity">Learn more</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+                  <div class="field__item">
+          <div class="paragraph paragraph--type--spotlight paragraph--view-mode--spotlight-two">
+              <div class="field field--name-field-image field--type-image field--label-hidden field__items">
+                <div class="field__item">
+          <img src="/sites/default/files/styles/spotlight_two/public/images/spotlight/working-right-selected-homepage-careers-hero.jpg?itok=Tr8HYqkt" width="510" height="450" alt="Cummins Employees Meeting" title="Cummins Employees Meeting" typeof="foaf:Image" class="image-style-spotlight-two" />
+
+
+
+            </div>
+          </div>
+
+<div  class="spotlight-info">
+          <div class="field field--name-field-subject-area field--type-string field--label-hidden field__items">
+                <div class="field__item">
+        <a href="http://careers.cummins.com/us-canada/working-right">our philosophy</a>
+            </div>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-title field--type-text field--label-hidden field__items">
+                <h2 class="field__item">
+        <a href="http://careers.cummins.com/us-canada/working-right" title="This is what we call &quot;Working Right&quot;">This is what we call "Working Right"</a>
+            </h2>
+          </div>
+    <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p><a href="http://careers.cummins.com/us-canada/working-right" title="This is what we call &quot;Working Right&quot;">We have a shared vision for where we&rsquo;re going, how we treat others and the culture of respect inside our company.</a></p>
+
+            </div>
+          </div>
+    <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+                <div class="field__item">
+        <a href="http://careers.cummins.com/us-canada/working-right">Get to Know Us</a>
+            </div>
+          </div>
+
+  </div>
+      </div>
+
+            </div>
+          </div>
+
+  </div>
+</article>
+</li>
+
+  </ul>
+
+</div>
+
+    </div>
+
+          </div>
+</div>
+
+  </div>
+
+  </div>
+
+        <!-- node--homepage.html.twig -->
+      </section>
+    </main>
+
+          <div class="homepage__newsroom_aside">
+        <aside class="section section-sidebar-first" role="complementary">
+          <h6>Latest News</h6>
+            <div class="region region-sidebar-first">
+    <div class="views-element-container block block-views block-views-blockhomepage-newsroom-block-1" id="block-views-block-homepage-newsroom-block-1">
+
+
+      <div><div class="view view-homepage-newsroom view-id-homepage_newsroom view-display-id-block_1 js-view-dom-id-bc393786069ca25175e083b890cb01889b512ae58e9cbdec20fc8fd47d552366">
+
+
+
+      <div class="view-content">
+          <div class="views-row"><div class="homepage__newsroom-article">
+      <img src="/sites/default/files/styles/image_slideshow_2/public/default_images/cummins-logo-signage-social_0.jpg?itok=bx2gkL4o" width="600" height="400" alt="" title="Cummins Newsroom Article" typeof="foaf:Image" class="image-style-image-slideshow-2" />
+
+
+
+    <span class="homepage__newsroom-title"><a href="/news/2018/11/27/life-imitates-art-look-generator-installation" hreflang="en">Life Imitates Art:  A Look at a Generator Installation</a></span>
+
+    <div class="homepage__newsroom-summary">
+        Unlike most homeowners, Chad and Ariane Jester of Broken Arrow, OK never have to worry about how to pass the time during a power outage ever again.
+    </div>
+
+    <span class="homepage__newsroom-readmore">
+        <a href="/news/2018/11/27/life-imitates-art-look-generator-installation">Read More</a>
+    </span>
+</div></div>
+    <div class="views-row"><div class="homepage__newsroom-article">
+      <img src="/sites/default/files/styles/image_slideshow_2/public/images/newsroom_article/aga-khan-hospital.jpg?itok=vYr8q5_D" width="600" height="400" alt="Cummins authorized distributor Orient Energy Systems (OES) recently partnered with Aga Khan Hospital and Medical College Foundation to upgrade the standby power systems at their hospitals in Karachi and Hyderabad." title="Cummins authorized distributor Orient Energy Systems (OES) recently partnered with Aga Khan Hospital and Medical College Foundation to upgrade the standby power systems at their hospitals in Karachi and Hyderabad." typeof="foaf:Image" class="image-style-image-slideshow-2" />
+
+
+
+    <span class="homepage__newsroom-title"><a href="/news/2018/11/26/aga-khan-hospitals-support-patient-care-cummins-dependable-power" hreflang="en">Aga Khan Hospitals Support Patient Care with Cummins Dependable Power</a></span>
+
+    <div class="homepage__newsroom-summary">
+
+    </div>
+
+    <span class="homepage__newsroom-readmore">
+        <a href="/news/2018/11/26/aga-khan-hospitals-support-patient-care-cummins-dependable-power">Read More</a>
+    </span>
+</div></div>
+    <div class="views-row"><div class="homepage__newsroom-article">
+      <img src="/sites/default/files/styles/image_slideshow_2/public/images/newsroom_article/Christmas%20gifts%20-%20iStock-865228074%20%28002%29.jpg?itok=40Y_h5mB" width="600" height="400" alt="" typeof="foaf:Image" class="image-style-image-slideshow-2" />
+
+
+
+    <span class="homepage__newsroom-title"><a href="/news/2018/11/21/gift-safety" hreflang="en">The Gift of Safety </a></span>
+
+    <div class="homepage__newsroom-summary">
+        As a natural disaster preparedness expert, I believe there is no better gift than the gift of safety.
+    </div>
+
+    <span class="homepage__newsroom-readmore">
+        <a href="/news/2018/11/21/gift-safety">Read More</a>
+    </span>
+</div></div>
+    <div class="views-row"><div class="homepage__newsroom-article">
+      <img src="/sites/default/files/styles/image_slideshow_2/public/images/newsroom_article/Family%20using%20technology%20-%20iStock-523767544.jpg?itok=iXia0l0w" width="600" height="400" alt="Family using technology in living room" typeof="foaf:Image" class="image-style-image-slideshow-2" />
+
+
+
+    <span class="homepage__newsroom-title"><a href="/news/2018/11/20/smart-home-upgrades-consider-year-end" hreflang="en">Smart Home Upgrades to Consider Before Year-End</a></span>
+
+    <div class="homepage__newsroom-summary">
+        These are a few reasons a homeowner may invest in smart home technology.
+    </div>
+
+    <span class="homepage__newsroom-readmore">
+        <a href="/news/2018/11/20/smart-home-upgrades-consider-year-end">Read More</a>
+    </span>
+</div></div>
+    <div class="views-row"><div class="homepage__newsroom-article">
+      <img src="/sites/default/files/styles/image_slideshow_2/public/images/newsroom_article/ti-sparkle.jpeg?itok=lqor3sH0" width="600" height="400" alt="Cummins Turkey provided the solution to back up two identical utilities with identical Bus A and B configurations in the form of two Cummins C2250D5 generator sets." title="Cummins Turkey provided the solution to back up two identical utilities with identical Bus A and B configurations in the form of two Cummins C2250D5 generator sets." typeof="foaf:Image" class="image-style-image-slideshow-2" />
+
+
+
+    <span class="homepage__newsroom-title"><a href="/news/2018/11/20/turkish-data-center-uptime-achieved-cummins-power-system-redundancy" hreflang="en">Turkish Data Center Uptime Achieved with Cummins Power System Redundancy</a></span>
+
+    <div class="homepage__newsroom-summary">
+        In order to back up two identical utilities with identical Bus A and B configurations, two generator sets that can back each other up in redundancy were required.
+    </div>
+
+    <span class="homepage__newsroom-readmore">
+        <a href="/news/2018/11/20/turkish-data-center-uptime-achieved-cummins-power-system-redundancy">Read More</a>
+    </span>
+</div></div>
+    <div class="views-row"><div class="homepage__newsroom-article">
+      <img src="/sites/default/files/styles/image_slideshow_2/public/images/newsroom_article/GIRL%20AT%20FROZEN%20WINDOW.jpg?itok=--7g6uzd" width="600" height="400" alt="Girl at frozen window on a snowy day " typeof="foaf:Image" class="image-style-image-slideshow-2" />
+
+
+
+    <span class="homepage__newsroom-title"><a href="/news/2018/11/19/snow-day-how-keep-your-kids-entertained-during-school-closure" hreflang="en">Snow Day! How to Keep Your Kids Entertained During a School Closure</a></span>
+
+    <div class="homepage__newsroom-summary">
+        Hot on the heels of another active hurricane season that left millions without power, winter storms are already starting to hit the country and it’s not even officially winter.
+    </div>
+
+    <span class="homepage__newsroom-readmore">
+        <a href="/news/2018/11/19/snow-day-how-keep-your-kids-entertained-during-school-closure">Read More</a>
+    </span>
+</div></div>
+    <div class="views-row"><div class="homepage__newsroom-article">
+      <img src="/sites/default/files/styles/image_slideshow_2/public/images/newsroom_article/Esteco%20preferred%20microgrid%20competition.jpg?itok=Spp_0l6U" width="600" height="400" alt="Cummins is co-sponsoring a design competition with the ESTECO Academy." title="Cummins is co-sponsoring a design competition with the ESTECO Academy." typeof="foaf:Image" class="image-style-image-slideshow-2" />
+
+
+
+    <span class="homepage__newsroom-title"><a href="/news/2018/11/14/design-competition-gives-college-students-chance-tackle-one-worlds-great-challenges" hreflang="en">Design Competition Gives College Students a Chance to Tackle One of the World’s Great Challenges</a></span>
+
+    <div class="homepage__newsroom-summary">
+        The company is joining forces with the ESTECO Academy to sponsor the Microgrid Design Competition in collaboration with ANSYS and Gamma Technologies.
+    </div>
+
+    <span class="homepage__newsroom-readmore">
+        <a href="/news/2018/11/14/design-competition-gives-college-students-chance-tackle-one-worlds-great-challenges">Read More</a>
+    </span>
+</div></div>
+
+    </div>
+
+          </div>
+</div>
+
+  </div>
+
+  </div>
+
+        </aside>
+      </div>
+      <!-- /#menu-aside -->
+
+  </div>
+  <!-- /.layout-main -->
+</div>
+<!-- /.layout-main-wrapper -->
+
+
+  </div>
+
+
+            <footer class="site-footer">
+              <div class="footer-wrapper">
+                                  <div class="section section-footer-first">
+                        <div class="region region-footer-first">
+    <nav role="navigation" aria-labelledby="block-footer-menu-menu" id="block-footer-menu" class="block block-menu navigation menu--footer">
+
+  <h2 class="visually-hidden" id="block-footer-menu-menu">Footer menu</h2>
+
+
+
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.cummins.com/news" title="News">News</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://investor.cummins.com/phoenix.zhtml?c=112916&amp;p=irol-disclaimer" title="Investors">Investors</a>
+              </li>
+                <li class="menu-item">
+        <a href="/partners" title="Partners" data-drupal-link-system-path="node/6">Partners</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://careers.cummins.com/" title="https://careers.cummins.com/">Careers</a>
+              </li>
+                <li class="menu-item">
+        <a href="/customer-assistance" title="Support" data-drupal-link-system-path="node/20251">Support</a>
+              </li>
+        </ul>
+
+
+
+  </nav>
+<div id="block-social" class="block block-block-content block-block-contentc8ae069a-351a-4bc8-9a66-40681c5f1a89">
+
+
+          <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items">
+                <div class="field__item">
+        <a class="social-icon social-twitter" href="https://twitter.com/Cummins" rel="noopener noreferrer" target="_blank" title="Cummins on Twitter">Twitter</a> <a class="social-icon social-facebook" href="https://www.facebook.com/CUMMINS" rel="noopener noreferrer" target="_blank" title="Cummins on Facebook">Facebook</a> <a class="social-icon social-youtube" href="https://www.youtube.com/CumminsInc" rel="noopener noreferrer" target="_blank" title="Cummins on YouTube">YouTube</a> <a class="social-icon social-linkedin" href="https://www.linkedin.com/company/cummins-inc" rel="noopener noreferrer" target="_blank" title="Cummins on LinkedIn">LinkedIn</a> <a class="social-icon social-instagram" href="https://www.instagram.com/cummins" rel="noopener noreferrer" target="_blank" title="Cummins on Instagram">Instagram</a>
+
+            </div>
+          </div>
+
+  </div>
+
+  </div>
+
+                  </div>
+                                                  <div class="section section-footer-second">
+                        <div class="region region-footer-second">
+    <div id="block-copyrights" class="block block-block-content block-block-contente3502ac7-1d4c-4000-83a0-89717ebe931b">
+
+
+          <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items">
+                <div class="field__item">
+        <p> © 2018 Cummins Inc., Box 3005, Columbus, IN 47202-3005 U.S.A.</p>
+
+            </div>
+          </div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-footerlinks-menu" id="block-footerlinks" class="block block-menu navigation menu--footer-links">
+
+  <h2 class="visually-hidden" id="block-footerlinks-menu">Footer links</h2>
+
+
+
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/privacy-and-legal" title="Privacy and Legal" data-drupal-link-system-path="node/2">Privacy and Legal</a>
+              </li>
+                <li class="menu-item">
+        <a href="/sitemap" title="Site Map" data-drupal-link-system-path="node/29">Site Map</a>
+              </li>
+        </ul>
+
+
+
+  </nav>
+<div id="block-cumminsutilsubscribefornewsblock" class="block block-cummins-util block-cummins-util-news-block">
+
+
+      <form class="cummins-util-news-form" data-drupal-selector="cummins-util-news-form" action="/" method="post" id="cummins-util-news-form" accept-charset="UTF-8">
+  <input data-drupal-selector="edit-elqformname" type="hidden" name="elqFormName" value="cmi-email-signup-form" />
+<input data-drupal-selector="edit-elqsiteid" type="hidden" name="elqSiteId" value="1480" />
+<div class="js-form-item form-item js-form-type-email form-type-email js-form-item-emailaddress form-item-emailaddress form-no-label">
+        <input data-drupal-selector="edit-emailaddress" type="email" id="edit-emailaddress" name="emailaddress" value="" size="60" maxlength="254" placeholder="Subscribe to Cummins News" class="form-email required" required="required" aria-required="true" />
+
+        </div>
+<input data-drupal-selector="submit-news-673249421" type="submit" id="submit-news-673249421" name="submit-news-673249421" value="Submit" class="button js-form-submit form-submit" />
+<div class="form-response">
+  <div class="form-response-chevron"></div>
+  <div class="form-response-info-wrapper">
+    <span class="form-response-title"></span>
+    <span class="form-response-msg"></span>
+  </div>
+</div><input autocomplete="off" data-drupal-selector="form-4fgktv1yu4ixgoraseuy314hmj4lj56jfgtnzkn8t34" type="hidden" name="form_build_id" value="form-4fGKtv1YU4IxGORASEuY314hmJ4lj56jFgTNZKn8t34" />
+<input data-drupal-selector="edit-cummins-util-news-form" type="hidden" name="form_id" value="cummins_util_news_form" />
+
+</form>
+
+  </div>
+
+  </div>
+
+                  </div>
+                                                                                                                                                                                                                  </div>
+            </footer>
+
+            <div id="leaving-dialog" class="leaving-dialog-wrapper">
+  <div class="leaving-dialog-box">
+    <div class="leaving-dialog-top">
+      Redirecting to
+      <div id="leaving-dialog-redirecting-to">
+        cummins.com
+      </div>
+    </div>
+    <div class="leaving-dialog-bottom">
+      <p>
+      The information you are looking for is on<br/>
+      <span id="leaving-dialog-redirecting-to-bottom">
+        cummins.com
+      </span>
+      </p>
+      <p>We are launching that site for you now.</p>
+      <p>Thank you.</p>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+    </div>
+
+
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/24511","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"asset_injector\/css\/accordion_max_height,asset_injector\/css\/author_image_fix_for_ie11,asset_injector\/css\/blockquote_no_div_,asset_injector\/css\/care_block_image,asset_injector\/css\/care_phone_mobile,asset_injector\/css\/country_region_zindex,asset_injector\/css\/est_downloads_revealed,asset_injector\/css\/hide_region_facet,asset_injector\/css\/image_grid_flex_fix,asset_injector\/css\/knowledge_center_carets_fix,asset_injector\/css\/mobile_menu_fixes_paul,asset_injector\/css\/padding_for_captcha_box,asset_injector\/css\/quick_specks_label_adjustment,asset_injector\/css\/transform_repair_on_customer_assistance_form,asset_injector\/css\/warranty_see_more_button_fix,asset_injector\/js\/product_finder_link,asset_injector\/js\/slick_homepage_numbers,better_exposed_filters\/general,classy\/base,classy\/messages,classy\/node,core\/drupal.autocomplete,core\/html5shiv,core\/jquery.form,core\/normalize,cummins\/global-scripts,cummins\/global-styles,cummins\/hover-intent,cummins_commerce\/cummins_commerce,cummins_est\/cummins_est,cummins_util\/cummins_util,eu_cookie_compliance\/eu_cookie_compliance,filter\/caption,search_autocomplete\/theme.minimal.css,system\/base,views\/views.module","theme":"cummins","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/homepage?ajax_form=1":true,"\/search":true},"ajax":{"submit-news-673249421":{"callback":"::ajaxCallback","effect":"fade","event":"click","url":"\/homepage?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"submit-news-673249421","_triggering_element_value":"Submit"}}},"eu_cookie_compliance":{"popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":true,"popup_html_info":"\n\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your experience.\u003C\/h2\u003E\u003Cp\u003EBy clicking any link on this page, you give consent for us to set cookies. For more information, see our \u003Ca href=\u0022https:\/\/www.cummins.com\/privacy-and-legal#cookies\u0022\u003EPrivacy and Legal page\u003C\/a\u003E.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button\u0022\u003EAgree\u003C\/button\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button\u0022\u003ERead More\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","popup_html_agreed":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"https:\/\/www.cummins.com\/privacy-and-legal","popup_link_new_window":true,"popup_position":false,"popup_language":"en","popup_bg_hex":"ffffff","popup_text_hex":"4a4a4a","domain":""},"search_autocomplete":{"product_title":{"source":"https:\/\/www.cummins.com\/callback\/product","selector":".js-form-item-title-2 .form-text","minChars":3,"maxSuggestions":10,"autoSubmit":false,"autoRedirect":false,"theme":"minimal","filters":["title"],"noResult":{"group":{"group_id":"no_results"},"label":"No results found for [search-phrase]. Click to perform full search.","value":"[search-phrase]"},"moreResults":{"group":{"group_id":"more_results"},"label":"View all results for [search-phrase].","value":"[search-phrase]"}},"search_block":{"source":"https:\/\/www.cummins.com\/solr\/autocomplete","selector":"#edit-search-api-fulltext, #block-exposedformsearchpage-1-2 #edit-search-api-fulltext","minChars":3,"maxSuggestions":10,"autoSubmit":true,"autoRedirect":true,"theme":"minimal","filters":["search_api_fulltext"],"noResult":{"group":{"group_id":"no_results"},"label":"No results found for [search-phrase]. Click to perform full search.","value":"[search-phrase]"},"moreResults":{"group":{"group_id":"more_results"},"label":"View all results for [search-phrase].","value":"[search-phrase]"}}},"smartIp":"{\u0022location\u0022:{\u0022source\u0022:\u0022smart_ip\u0022,\u0022ipAddress\u0022:\u0022162.158.74.149\u0022,\u0022ipVersion\u0022:4,\u0022timestamp\u0022:1543868592,\u0022originalData\u0022:{\u0022city\u0022:{\u0022geoname_id\u0022:4887398,\u0022names\u0022:{\u0022de\u0022:\u0022Chicago\u0022,\u0022en\u0022:\u0022Chicago\u0022,\u0022es\u0022:\u0022Chicago\u0022,\u0022fr\u0022:\u0022Chicago\u0022,\u0022ja\u0022:\u0022\\u30b7\\u30ab\\u30b4\u0022,\u0022pt-BR\u0022:\u0022Chicago\u0022,\u0022ru\u0022:\u0022\\u0427\\u0438\\u043a\\u0430\\u0433\\u043e\u0022,\u0022zh-CN\u0022:\u0022\\u829d\\u52a0\\u54e5\u0022}},\u0022continent\u0022:{\u0022code\u0022:\u0022NA\u0022,\u0022geoname_id\u0022:6255149,\u0022names\u0022:{\u0022de\u0022:\u0022Nordamerika\u0022,\u0022en\u0022:\u0022North America\u0022,\u0022es\u0022:\u0022Norteam\\u00e9rica\u0022,\u0022fr\u0022:\u0022Am\\u00e9rique du Nord\u0022,\u0022ja\u0022:\u0022\\u5317\\u30a2\\u30e1\\u30ea\\u30ab\u0022,\u0022pt-BR\u0022:\u0022Am\\u00e9rica do Norte\u0022,\u0022ru\u0022:\u0022\\u0421\\u0435\\u0432\\u0435\\u0440\\u043d\\u0430\\u044f \\u0410\\u043c\\u0435\\u0440\\u0438\\u043a\\u0430\u0022,\u0022zh-CN\u0022:\u0022\\u5317\\u7f8e\\u6d32\u0022}},\u0022country\u0022:{\u0022geoname_id\u0022:6252001,\u0022iso_code\u0022:\u0022US\u0022,\u0022names\u0022:{\u0022de\u0022:\u0022USA\u0022,\u0022en\u0022:\u0022United States\u0022,\u0022es\u0022:\u0022Estados Unidos\u0022,\u0022fr\u0022:\u0022\\u00c9tats-Unis\u0022,\u0022ja\u0022:\u0022\\u30a2\\u30e1\\u30ea\\u30ab\\u5408\\u8846\\u56fd\u0022,\u0022pt-BR\u0022:\u0022Estados Unidos\u0022,\u0022ru\u0022:\u0022\\u0421\\u0428\\u0410\u0022,\u0022zh-CN\u0022:\u0022\\u7f8e\\u56fd\u0022}},\u0022location\u0022:{\u0022accuracy_radius\u0022:500,\u0022latitude\u0022:41.848300000000002,\u0022longitude\u0022:-87.651700000000005,\u0022metro_code\u0022:602,\u0022time_zone\u0022:\u0022America\\\/Chicago\u0022},\u0022postal\u0022:{\u0022code\u0022:\u002260602\u0022},\u0022registered_country\u0022:{\u0022geoname_id\u0022:6252001,\u0022iso_code\u0022:\u0022US\u0022,\u0022names\u0022:{\u0022de\u0022:\u0022USA\u0022,\u0022en\u0022:\u0022United States\u0022,\u0022es\u0022:\u0022Estados Unidos\u0022,\u0022fr\u0022:\u0022\\u00c9tats-Unis\u0022,\u0022ja\u0022:\u0022\\u30a2\\u30e1\\u30ea\\u30ab\\u5408\\u8846\\u56fd\u0022,\u0022pt-BR\u0022:\u0022Estados Unidos\u0022,\u0022ru\u0022:\u0022\\u0421\\u0428\\u0410\u0022,\u0022zh-CN\u0022:\u0022\\u7f8e\\u56fd\u0022}},\u0022subdivisions\u0022:[{\u0022geoname_id\u0022:4896861,\u0022iso_code\u0022:\u0022IL\u0022,\u0022names\u0022:{\u0022en\u0022:\u0022Illinois\u0022,\u0022es\u0022:\u0022Illinois\u0022,\u0022fr\u0022:\u0022Illinois\u0022,\u0022ja\u0022:\u0022\\u30a4\\u30ea\\u30ce\\u30a4\\u5dde\u0022,\u0022pt-BR\u0022:\u0022Ilin\\u00f3is\u0022,\u0022ru\u0022:\u0022\\u0418\\u043b\\u043b\\u0438\\u043d\\u043e\\u0439\\u0441\u0022,\u0022zh-CN\u0022:\u0022\\u4f0a\\u5229\\u8bfa\\u4f0a\\u5dde\u0022}}]},\u0022country\u0022:\u0022United States\u0022,\u0022countryCode\u0022:\u0022US\u0022,\u0022region\u0022:\u0022Illinois\u0022,\u0022regionCode\u0022:\u0022IL\u0022,\u0022city\u0022:\u0022Chicago\u0022,\u0022zip\u0022:\u002260602\u0022,\u0022latitude\u0022:41.848300000000002,\u0022longitude\u0022:-87.651700000000005,\u0022timeZone\u0022:\u0022America\\\/Chicago\u0022}}","smartIpSrc":{"smartIp":"smart_ip","geocodedSmartIp":"geocoded_smart_ip","w3c":"w3c"},"cummins_commerce":{"technical_documents":"false","document_category":"false"},"field_group":{"html_element":{"mode":"spotlight_two","context":"view","settings":{"id":"","classes":"spotlight-info","element":"div","show_label":false,"label_element":"h3","attributes":"","effect":"none","speed":"fast"}}},"user":{"uid":0,"permissionsHash":"d49c0a66141f60693c03c29a6fc934164566b82f7df1a659780ab30c488e3e28"}}</script>
+<script src="/sites/default/files/js/js_131XtnfQ8mZvf60pQyswFbok_oVBWqNJSohT5Cpquks.js"></script>
+
+      <div class="form-response page-form-response custom-form-response">
+        <div class="form-response-info-wrapper">
+
+        <div class="message-content">
+          <div class="chevron">
+            <svg viewBox="0 0 53 106" xmlns="http://www.w3.org/2000/svg"><path fill="#D8D8D8" d="M0 24.042V0l53 53-53 53V81.958L28.958 53z" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="message">
+              <div class="close">
+                  <svg id="close-btn" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                      <path class="cls-1" d="M16.78,13.33l8.84-8.84A2.44,2.44,0,0,0,22.17,1L13.33,9.89,4.49,1A2.44,2.44,0,0,0,1,4.49l8.84,8.84L1,22.17a2.44,2.44,0,1,0,3.45,3.45l8.84-8.84,8.84,8.84a2.44,2.44,0,0,0,3.45-3.45Z" transform="translate(-0.33 -0.33)" />
+                  </svg>
+              </div>
+            <span class="form-response-title"></span>
+            <span class="form-response-msg"></span>
+            </div>
+        </div>
+        </div>
+    </div>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"65f70fe72f","applicationID":"101352039","transactionName":"Nl1TYhRSXxVRVkALWw8XcFUSWl4IH3FGF0QAVG11CUFUOnZaRg9oJ1dDWyRGWApUUEZPChNdX1IDQWEKUVZRClsNXFREIFxDC3FWQAtbDw==","queueTime":0,"applicationTime":124,"atts":"GhpQFFxITBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
