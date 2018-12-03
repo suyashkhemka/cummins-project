@@ -1,0 +1,30 @@
+.container-fluid h1 {
+  color: rgb(79, 76, 176);
+  font-size: 32px;
+}
+
+.placeholder {
+  text-align: center;
+  border: solid 1px rgb(79, 76, 176);
+  height: 100px;
+  padding: 20px;
+  background-color: rgb(233, 239, 259);
+  color: rgb(79, 76, 176);
+  font-size: 24px;
+}
+
+.timeseries {
+  text-align: center;
+  border: solid 2px;
+  height: 300px;
+  padding: 130px;
+  margin-top: 20px;
+  border: solid 1px rgb(79, 76, 176);
+  background-color: rgb(233, 239, 259);
+  color: rgb(79, 76, 176);
+  font-size: 12px;
+}
+
+.kpi_desc {
+  font-size: 12px;
+}

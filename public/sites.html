@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- CDN = Content Delivery Network -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/tablesort.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Rubik:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+
+  <title>Sites</title>
+</head>
+
+<body>
+  <div id="siteMain">
+    <header>
+      <div class="intro">
+        <h1>Alternative Green Systems - Turbine Outage Management</h1>
+        <p class="quote">&ldquo;The future is green energy, sustainability, renewable energy&rdquo;</p>
+      </div>
+
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
+    </header>
+
+    <!-- Site Table goes below this line-->
+
+    <div class="row">
+      <div class="container">
+        <h1>Client Sites</h1>
+        <table id="siteTable" class="table table-striped table-sm table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Site ID</th>
+              <th scope="col">Client ID</th>
+              <th scope="col">Site Name</th>
+              <th scope="col">Site Description</th>
+              <th scope="col">Primary Contact</th>
+              <th scope="col">Capacity</th>
+              <th scope="col">Commercial Date</th>
+              <th scope="col">Address Line 1</th>
+              <th scope="col">Address Line 2</th>
+              <th scope="col">City</th>
+              <th scope="col">State</th>
+              <th scope="col">Zip</th>
+              <th scope="col">Country</th>
+              <th scope="col">View Turbines</th>
+            </tr>
+          </thead>
+          <tbody id="siteTableBody" v-for="data in sites" :key="data.siteId">
+            <td>{{data.siteId}}</td>
+            <td>{{data.clientId}}</td>
+            <td>{{data.siteName}}</td>
+            <td>{{data.siteDescription}}</td>
+            <td>{{data.primaryContact}}</td>
+            <td>{{data.capacity}}</td>
+            <td>{{data.commercialDate}}</td>
+            <td>{{data.addrLine1}}</td>
+            <td>{{data.addrLine2}}</td>
+            <td>{{data.addrCity}}</td>
+            <td>{{data.addrState}}</td>
+            <td>{{data.addrZip}}</td>
+            <td>{{data.addrCountry}}</td>
+            <td>
+                <button class="viewSiteTurbineButton" @click="gotoSiteTurbines(data.siteId)">View Turbines</button>
+              </td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="content">
+      <!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
+      <form id="newSiteForm" @submit.prevent="handleSiteForm">
+        <div class="form-group">
+          <p>
+            <label>Site Name</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="siteName" v-model="siteForm.siteName" required>
+          </p>
+          <p>
+            <label>Site Description</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="siteDescription" v-model="siteForm.siteDescription" required>
+          </p>
+          <p>
+            <label>Primary Contact</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="primaryContact" v-model="siteForm.primaryContact" required>
+          </p>
+          <p>
+            <label>Capacity</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="capacity" v-model="siteForm.capacity" required>
+          </p>
+          <p>
+            <label>Commercial Date</label>
+          </p>
+          <p>
+            <input type="date" class="form-control" id="commercialDate" v-model="siteForm.commercialDate" required>
+          </p>
+          <p>
+            <label>Address Line 1</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="addrLine1" v-model="siteForm.addrLine1" required>
+          </p>
+          <p>
+            <label>Address Line 2</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="addrLine2" v-model="siteForm.addrLine2" required>
+          </p>
+          <p>
+            <label>City</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="addrCity" v-model="siteForm.addrCity" required>
+          </p>
+          <p>
+            <label>State</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="addrState" v-model="siteForm.addrState" required>
+          </p>
+          <p>
+            <label>Zip</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="addrZip" v-model="siteForm.addrZip" required>
+          </p>
+          <p>
+            <label>Country</label>
+          </p>
+          <p>
+            <input type="text" class="form-control" id="addrCountry" v-model="siteForm.addrCountry" required>
+          </p> 
+        </div>
+        <p>
+          <button type="submit" id="submitNewComment" class="btn btn-primary">Submit</button>
+        </p>
+      </form>
+    </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+    <div class="content">
+      <div class="row">
+        <p>Copy Right Team Green 16 &mdash; All Rights reserved. Don&rsquo;t take our stuff.</p>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <!-- Vue: development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/tablesort.min.js"></script>
+  <script src="js/site.app.js"></script>
+  <script>
+    new Tablesort(document.getElementById('siteTable'));
+  </script>
+
+  <script type="text/javascript">
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+</html>
