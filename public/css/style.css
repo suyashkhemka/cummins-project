@@ -2,7 +2,7 @@
     NAVIGATION
 ********************/
 /* Add a black background color to the top navigation */
-.navbar-default {
+.navbar {
     background-color: black;
 
 }
