@@ -4,10 +4,13 @@
 /* Add a black background color to the top navigation */
 .navbar {
     background-color: black;
-    height: 70px;
+    height: 90px;
 
 }
-
+.navbar-collapse
+{
+  paddint-top:30px;
+}
 #bs-example-navbar-collapse-1
 {
 
