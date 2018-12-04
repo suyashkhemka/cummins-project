@@ -7,6 +7,10 @@
     height: 90px;
     color:white;
 }
+main
+{
+  background-color: grey;
+}
 #footer
 {
   height: 160px;
