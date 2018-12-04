@@ -4,5 +4,6 @@
 /* Add a black background color to the top navigation */
 .navbar {
     background-color: black;
+    height: 100px;
 
 }
