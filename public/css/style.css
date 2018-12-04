@@ -7,6 +7,10 @@
     height: 90px;
 
 }
+#footer
+{
+  height: 200px;
+}
 .navbar-collapse
 {
   padding-top:20px;
