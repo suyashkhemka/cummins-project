@@ -8,6 +8,10 @@
     color:white;
     margin-bottom: 0px;
 }
+.card
+{
+  background-color:#4d0000;
+}
 .customertype
 {
   margin:0px;
@@ -37,7 +41,7 @@
 
 /* Style for progress bar*/
 /*http://kodhus.com/newsite/step-progress-bar-css-only/*/
-.container {
+/*.container {
       width: 600px;
       margin: 100px auto;
   }
@@ -88,4 +92,4 @@
   }
   .progressbar li.active + li:after {
       background-color: green;
-  }
+  } */
