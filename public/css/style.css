@@ -10,7 +10,7 @@
 }
 .card
 {
-  background-color:#4d0000;
+  background-color:#262626;
 }
 .customertype
 {
@@ -41,7 +41,7 @@
 
 /* Style for progress bar*/
 /*http://kodhus.com/newsite/step-progress-bar-css-only/*/
-/*.container {
+/*S.container {
       width: 600px;
       margin: 100px auto;
   }
