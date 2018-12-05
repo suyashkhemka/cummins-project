@@ -28,13 +28,12 @@
   margin-bottom: 30px;
 }
 
-.card-img-top
-{
-  align-content: center;
-}
+
 .card-title, .card-text
 {
-  align-items: center;
+
+  padding: 0px 10px;
+  color: white;
 }
 .btn-danger
 {
