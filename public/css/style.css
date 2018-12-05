@@ -11,6 +11,7 @@
 .card
 {
   background-color:#262626;
+  width: 250px;
 }
 .customertype
 {
@@ -18,16 +19,15 @@
 }
 .heading
 {
-  margin:30px;
+  margin: 30px;
+  padding-top: 20px;
+  margin-top: 0px;
 }
 .row
 {
   margin-bottom: 30px;
 }
-.card
-{
-  width: 150px;
-}
+
 .card-img-top
 {
   align-content: center;
