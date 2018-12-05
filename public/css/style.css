@@ -16,9 +16,25 @@
 {
   margin:0px;
 }
-#heading
+.heading
 {
-  margin:0px;
+  margin:30px;
+}
+.row
+{
+  margin-bottom: 30px;
+}
+.card
+{
+  width: 150px;
+}
+.card-img-top
+{
+  align-content: center;
+}
+.card-title, .card-text
+{
+  align-items: center;
 }
 #main
 {
