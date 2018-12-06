@@ -59,7 +59,13 @@
 
 .redbar
 {
-  background-color:red;
+  border-radius: 50px;
+   background-color: #da291c;
+   height: 10px;
+}
+.btn-danger
+{
+  background-color:#da291c;
 }
 body {font-family: Arial, Helvetica, sans-serif;}
 
