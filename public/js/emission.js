@@ -1,4 +1,4 @@
-Highcharts.chart('container', {
+Highcharts.chart('emission', {
     chart: {
         type: 'area'
     },
@@ -14,7 +14,7 @@ Highcharts.chart('container', {
         allowDecimals: false,
         labels: {
             formatter: function () {
-                return this.value/20; // clean, unformatted number for year
+                return this.value; // clean, unformatted number for year
             }
         }
     },
