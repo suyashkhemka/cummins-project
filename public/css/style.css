@@ -24,6 +24,10 @@
   margin-top: 0px;
   color: white;
 }
+.login-person
+{
+  color:black;
+}
 .row
 {
   margin-bottom: 30px;
@@ -60,13 +64,10 @@
 .redbar
 {
   border-radius: 50px;
-   background-color: #da291c;
+   background-color: #c12e2a;
    height: 10px;
 }
-.btn-danger
-{
-  background-color:#da291c;
-}
+
 body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Full-width input fields */
