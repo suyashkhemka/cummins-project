@@ -24,6 +24,10 @@
   margin-top: 0px;
   color: white;
 }
+.login-person
+{
+  color:black;
+}
 .row
 {
   margin-bottom: 30px;
@@ -55,6 +59,13 @@
 #bs-example-navbar-collapse-1
 {
 
+}
+
+.redbar
+{
+  border-radius: 50px;
+   background-color: #c12e2a;
+   height: 10px;
 }
 
 body {font-family: Arial, Helvetica, sans-serif;}
