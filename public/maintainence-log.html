@@ -127,16 +127,16 @@
 
 
 <div style="overflow-x:auto;">
-<table>
+<table id="maintenanceTable">
   <thead>
-    <th>ID</th>
-    <th>Date</th>
-    <th>Time</th>
-    <th>Part</th>
-    <th>Person</th>
-    <th>Downtime</th>
-    <th>Reason</th>
-    <th>Notes</th>
+    <th scope="col">ID</th>
+    <th scope="col">Date</th>
+    <th scope="col">Time</th>
+    <th scope="col">Part</th>
+    <th scope="col">Person</th>
+    <th scope="col">Downtime</th>
+    <th scope="col">Reason</th>
+    <th scope="col">Notes</th>
   </thead>
   <tr>
     <td>123</td>
@@ -199,11 +199,19 @@ Reason: <input type="text" name="reason"><br>
 Notes: <input type="text" name="note"><br>
 <br />
 
+<input type="submit" value="Submit">
 
 
 
 </div>
     </main>
+
+
+<!-- Scripts for table sort-->
+<script src="js/tablesort.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('siteTable'));
+</script>
 
 
 
