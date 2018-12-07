@@ -149,20 +149,20 @@ var emissionData=[
                     text: 'Emission Level'},
 
                 plotLines: [{
-                value: .3,
+                value: .4,
                 color: 'green',
                 dashStyle: 'shortdash',
                 width: 2,
                 label: {
-                    text: 'Low Emission'
+                    text: 'Low Emission Level'
                 }
               }, {
-                value: .5,
+                value: .6,
                 color: 'Yellow',
                 dashStyle: 'shortdash',
                 width: 2,
                 label: {
-                    text: 'Medium Emission'
+                    text: 'Medium Emission Level'
                 }
             },
             {
@@ -171,7 +171,7 @@ var emissionData=[
               dashStyle: 'shortdash',
               width: 2,
               label: {
-                  text: 'High Emission'
+                  text: 'High Emission Level'
               }
           }]
             },
@@ -361,7 +361,27 @@ Highcharts.chart('emission', {
             formatter: function () {
                 return this.value / 1000 + 'g/mi';
             }
-        }
+        },
+        plotLines: [{
+        value: 15000,
+        color: 'green',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Low Emission Level'}
+      }, {
+        value: 25000,
+        color: 'Yellow',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Medium Emission Level'}
+    },
+    {
+      value: 35000,
+      color: 'Red',
+      dashStyle: 'shortdash',
+      width: 2,
+      label: {text: 'High Emission Level'}
+    }]
     },
     tooltip: {
         pointFormat: '{series.name} had emission levels of <b>{point.y:,.0f}</b><br/> on day {point.x}'
@@ -436,7 +456,27 @@ Highcharts.chart('O2', {
             formatter: function () {
                 return this.value / 1000 + 'g/mi';
             }
-        }
+        },
+        plotLines: [{
+        value: 15000,
+        color: 'green',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Low Emission Level'}
+      }, {
+        value: 25000,
+        color: 'Yellow',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Medium Emission Level'}
+    },
+    {
+      value: 35000,
+      color: 'Red',
+      dashStyle: 'shortdash',
+      width: 2,
+      label: {text: 'High Emission Level'}
+    }]
     },
     tooltip: {
         pointFormat: '{series.name} had emission O2 levels of <b>{point.y:,.0f}</b><br/> on day {point.x}'
@@ -510,7 +550,27 @@ Highcharts.chart('CO', {
             formatter: function () {
                 return this.value / 1000 + 'g/mi';
             }
-        }
+        },
+        plotLines: [{
+        value: 15000,
+        color: 'green',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Low Emission Level'}
+      }, {
+        value: 25000,
+        color: 'Yellow',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Medium Emission Level'}
+    },
+    {
+      value: 35000,
+      color: 'Red',
+      dashStyle: 'shortdash',
+      width: 2,
+      label: {text: 'High Emission Level'}
+    }]
     },
     tooltip: {
         pointFormat: '{series.name} had CO emission levels of <b>{point.y:,.0f}</b><br/> on day {point.x}'
@@ -585,7 +645,27 @@ Highcharts.chart('NO', {
             formatter: function () {
                 return this.value / 1000 + 'g/mi';
             }
-        }
+        },
+        plotLines: [{
+        value: 15000,
+        color: 'green',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Low Emission Level'}
+      }, {
+        value: 25000,
+        color: 'Yellow',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Medium Emission Level'}
+    },
+    {
+      value: 35000,
+      color: 'Red',
+      dashStyle: 'shortdash',
+      width: 2,
+      label: {text: 'High Emission Level'}
+    }]
     },
     tooltip: {
         pointFormat: '{series.name} had NO emission levels of <b>{point.y:,.0f}</b><br/> on day {point.x}'
@@ -659,7 +739,27 @@ Highcharts.chart('SO2', {
             formatter: function () {
                 return this.value / 1000 + 'g/mi';
             }
-        }
+        },
+        plotLines: [{
+        value: 15000,
+        color: 'green',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Low Emission Level'}
+      }, {
+        value: 25000,
+        color: 'Yellow',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Medium Emission Level'}
+    },
+    {
+      value: 35000,
+      color: 'Red',
+      dashStyle: 'shortdash',
+      width: 2,
+      label: {text: 'High Emission Level'}
+    }]
     },
     tooltip: {
         pointFormat: '{series.name} had SO2emission levels of <b>{point.y:,.0f}</b><br/> on day {point.x}'
@@ -726,15 +826,33 @@ Highcharts.chart('CO2', {
         }
     },
     yAxis: {
-        title: {
-            text: 'Emission'
-        },
+        title: {text: 'Emission'},
         labels: {
-            formatter: function () {
-                return this.value / 1000 + 'g/mi';
-            }
-        }
+            formatter: function () {return this.value / 1000 + 'g/mi';}
+        },
+
+        plotLines: [{
+        value: 15000,
+        color: 'green',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Low Emission Level'}
+      }, {
+        value: 25000,
+        color: 'Yellow',
+        dashStyle: 'shortdash',
+        width: 2,
+        label: {text: 'Medium Emission Level'}
     },
+    {
+      value: 35000,
+      color: 'Red',
+      dashStyle: 'shortdash',
+      width: 2,
+      label: {text: 'High Emission Level'}
+    }]}
+  ,
+
     tooltip: {
         pointFormat: '{series.name} had CO2 emission levels of <b>{point.y:,.0f}</b><br/> on day {point.x}'
     },
