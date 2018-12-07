@@ -10,18 +10,21 @@ $.getJSON(
                 zoomType: 'x'
             },
             title: {
-                text: 'USD to EUR exchange rate over time'
+                text: 'Engine Emission rate over time'
             },
             subtitle: {
                 text: document.ontouchstart === undefined ?
                         'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
             },
             xAxis: {
+              title:{
+                text: 'Time'
+              },
                 type: 'datetime'
             },
             yAxis: {
                 title: {
-                    text: 'Exchange rate'
+                    text: 'Emission Level'
                 }
             },
             legend: {
@@ -56,7 +59,7 @@ $.getJSON(
 
             series: [{
                 type: 'area',
-                name: 'USD to EUR',
+                name: 'Emission',
                 data: data
             }]
         });
