@@ -627,7 +627,7 @@ var ranges2 = [],
 Highcharts.chart('filter', {
 
     title: {
-        text: 'Engine Health'
+        text: 'Engine Fitration'
     },
 
     xAxis: {
@@ -637,7 +637,8 @@ Highcharts.chart('filter', {
     yAxis: {
         title: {
 
-            text: null
+            text: null,
+            labelSuffix: '%'
         },
         max:100,
         min:0
