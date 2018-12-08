@@ -287,7 +287,7 @@ var ranges = [
 Highcharts.chart('range', {
 
     title: {
-        text: 'Total Emission'
+        text: 'Total Organizational Emission Output'
     },
 
     xAxis: {
