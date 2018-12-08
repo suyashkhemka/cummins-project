@@ -333,7 +333,7 @@ Highcharts.chart('range', {
     }]
 });
 
-
+/*
 Highcharts.chart('emission', {
     chart: {
         type: 'area'
@@ -417,6 +417,8 @@ Highcharts.chart('emission', {
       ]
 
 });
+
+*/
 
 
 // ------ O2  Emission ----------
