@@ -130,15 +130,17 @@
   </div>
 
   <div style="overflow-x:auto;">
-  <table>
+  <table id="contract">
     <thead>
-
+<tr>
+  <i class="icon-arrow-up"></i><i class="icon-arrow-down"> </i>
       <th>Contract Name</th>
       <th>Date Signed</th>
       <th>Last Reviewed</th>
       <th>Expiration</th>
       <th>Contact</th>
       <th>Notes</th>
+    </tr>
     </thead>
     <tr>
       <td>Supplier</td>
@@ -157,7 +159,7 @@
       <td>Note goes here</td>
     </tr>
     <tr>
-      <td>Supplier</td>
+      <td>Mechanic</td>
       <td>1/1/11</td>
       <td>1/2/12</td>
       <td>9/7/20</td>
@@ -165,7 +167,7 @@
       <td>Note goes here</td>
     </tr>
     <tr>
-      <td>Supplier</td>
+      <td>Legal</td>
       <td>1/1/11</td>
       <td>1/2/12</td>
       <td>9/7/20</td>
@@ -173,6 +175,11 @@
       <td>Note goes here</td>
     </tr>
   </table>
+
+  <script src="js/tablesort.min.js"></script>
+  <!--Tablesort plugin from https://github.com/tristen/tablesort-->
+  <script> new Tablesort(document.getElementById('contract')); </script>
+
   </div>
 
 Upload a new contract:

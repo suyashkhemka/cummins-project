@@ -132,13 +132,16 @@
 </div>
 
 
-<table>
+<table id="deploy">
   <thead>
+    <tr>
+  <i class="icon-arrow-up"></i><i class="icon-arrow-down"> </i>
     <th>Product ID</th>
     <th>Product Name</th>
     <th>Location</th>
     <th>Contact</th>
     <th>Notes</th>
+    </tr>
   </thead>
   <tr>
     <td>231</td>
@@ -170,6 +173,9 @@
   </tr>
 </table>
 
+<script src="js/tablesort.min.js"></script>
+<!--Tablesort plugin from https://github.com/tristen/tablesort-->
+<script> new Tablesort(document.getElementById('deploy')); </script>
 
 
 
