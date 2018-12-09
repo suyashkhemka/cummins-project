@@ -195,11 +195,15 @@ span.psw {
   height:35px;
   width:auto;
 }
-
+.logobar
+{
+  margin: auto;
+}
 .logo
 {
   height:30px;
   width:30px;
+  margin-left:10px;
 }
 th {
   background-color: red;
