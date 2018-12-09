@@ -189,7 +189,11 @@ span.psw {
 }
 /*Table design*/
 
-
+.icons
+{
+  background-color:black;
+  height:20px;
+}
 .logo
 {
   height:25px;
