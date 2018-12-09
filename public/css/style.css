@@ -194,6 +194,14 @@ span.psw {
   background-color:black;
   height:20px;
 }
+.greyicon, .icons
+{
+  display: inline-block;
+}
+.greyicon
+{
+  background-color: grey;
+}
 .logo
 {
   height:25px;
