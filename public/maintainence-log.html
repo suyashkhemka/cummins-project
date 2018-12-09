@@ -132,6 +132,8 @@
 <div style="overflow-x:auto;">
 <table id="maintenanceTable">
   <thead>
+    <tr>
+        <i class="icon-arrow-up"></i><i class="icon-arrow-down"> </i>
     <th scope="col">ID</th>
     <th scope="col">Date</th>
     <th scope="col">Time</th>
@@ -140,6 +142,7 @@
     <th scope="col">Downtime</th>
     <th scope="col">Reason</th>
     <th scope="col">Notes</th>
+    </tr>
   </thead>
   <tr>
     <td>123</td>
@@ -182,6 +185,11 @@
     <td>This was a routine repair</td>
   </tr>
 </table>
+
+<script src="js/tablesort.min.js"></script>
+//Tablesort plugin from https://github.com/tristen/tablesort
+<script> new Tablesort(document.getElementById('MaintenanceTable')); </script>
+
 </div>
 
 --Add new entry to log --
