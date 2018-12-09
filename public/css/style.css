@@ -195,7 +195,10 @@ span.psw {
   height:35px;
   width:auto;
 }
-
+.logobar
+{
+  margin: auto;
+}
 .logo
 {
   height:30px;
