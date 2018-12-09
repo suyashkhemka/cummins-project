@@ -192,8 +192,12 @@ span.psw {
 .icons
 {
 
-  height:35px;
-  width:auto;
+  height:40px;
+  padding-left: 400px;
+}
+.poweredby
+{
+  margin-top: 10px;
 }
 .logobar
 {
@@ -201,8 +205,8 @@ span.psw {
 }
 .logo
 {
-  height:30px;
-  width:30px;
+  height:35px;
+  width:35px;
   margin-left:10px;
 }
 th {
