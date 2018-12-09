@@ -189,6 +189,12 @@ span.psw {
 }
 /*Table design*/
 
+
+.logo
+{
+  height:25px;
+  width:25px;
+}
 th {
   background-color: red;
   color: white;
