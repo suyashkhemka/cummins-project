@@ -130,13 +130,16 @@
   <a href="homepage-customer.html" style="color: Black;"><h3>Return to Homepage</h3></a>
   </div>
 
-<table>
+<table id="payment">
   <thead>
+    <tr>
+      <i class="icon-arrow-up"></i><i class="icon-arrow-down"> </i>
     <th>ID</th>
     <th>Product/Part</th>
     <th>Amount</th>
     <th>Payment Date - Due</th>
     <th>Payment Date - Paid</th>
+    </tr>
   </thead>
   <tr>
     <td>1</td>
@@ -162,6 +165,9 @@
 </table>
 
 
+<script src="js/tablesort.min.js"></script>
+//Tablesort plugin from https://github.com/tristen/tablesort
+<script> new Tablesort(document.getElementById('taskTable')); </script>
 
 </div>
     </main>
