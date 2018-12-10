@@ -418,7 +418,7 @@ Highcharts.chart('speed', {
     tooltip: {
         crosshairs: true,
         shared: true,
-        valueSuffix: '%'
+        valueSuffix: 'rpm'
     },
 
     legend: {

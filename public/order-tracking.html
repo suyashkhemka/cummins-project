@@ -130,34 +130,53 @@
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<h1 class="heading">Order-Tracking</h1>
+  <a href="homepage-customer.html"><h1  class="heading" >Cummins GenNext™ Portal</h1></a>
 
-  <div align="right">
-  <a href="homepage-customer.html" style="color: Black;"><h3>Return to Homepage</h3></a>
-  </div>
+<h1 class="heading" align="center"><font color="black"><b>Order Tracking</b></font></h1>
 
 
-  Select your order
+<div align="center">
+  Select your order:
       <select>
-        <option value="volvo">Part 1</option>
-        <option value="saab">Engine 1</option>
-        <option value="mercedes">Part 2</option>
-        <option value="audi">Part 3</option>
+        <option value="volvo">L-Series - #3874WER</option>
+        <option value="saab">M-Series - #R728SDE</option>
+        <option value="mercedes">L-Series - #5WE345F</option>
+        <option value="audi">C-Series - Engine</option>
       </select>
+</div>
 
-      <p>Status of order:</p>
-      <div class="w3-light-grey w3-xlarge">
-        <div class="w3-container w3-green" style="width:65%"><small>Waiting to ship</small></div>
-      </div>
+<!-- Progress bar code from https://codepen.io/danzingari/pen/kkkAOB -->
+<div class="row bs-wizard" style="border-bottom:0;">
 
-<!-- Progress bar code from http://kodhus.com/newsite/step-progress-bar-css-only/ -->
-      <div class="container">
-            <ul class="progressbar">
-                <li class="active">login</li>
-                <li class="active">choose interest</li>
-                <li class="active">add friends</li>
-                <li>View map</li>
-        </ul></div>
+                <div class="col-xs-3 bs-wizard-step complete">
+                  <div class="text-center bs-wizard-stepnum">Order Placed</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Order for part #3874WER has been placed</div>
+                </div>
+
+                <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+                  <div class="text-center bs-wizard-stepnum">Order Processed</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Your order has been recieved. It will be shipped out in the next 5 business days.</div>
+                </div>
+
+                <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+                  <div class="text-center bs-wizard-stepnum">Order Shipped</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Your order for part #3874WER has been shipped. Tracking is available with this code : #72E3J8423E  </div>
+                </div>
+                <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+                  <div class="text-center bs-wizard-stepnum">Order Complete</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center" >Your order has been recieved and paid for.</div>
+                </div>
+            </div>
+
+<!--- end of progress bar -->
 
 
         <div class="icons" >
@@ -255,6 +274,7 @@
     <script src="js/tablesort.min.js"></script>-->
 
 
+<script src="js/order.js"></script>
 
 
 </body>
