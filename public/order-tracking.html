@@ -151,45 +151,36 @@
       </div>
 
 <!-- Progress bar code from http://kodhus.com/newsite/step-progress-bar-css-only/ -->
-<div class="wrapper">
+<div class="row bs-wizard" style="border-bottom:0;">
 
- <h1>Dot-check Progress Bar</h1>
+                <div class="col-xs-3 bs-wizard-step complete">
+                  <div class="text-center bs-wizard-stepnum">Step 1</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Lorem ipsum dolor sit amet.</div>
+                </div>
 
-<ol class="ProgressBar">
-  <li class="ProgressBar-step">
-    <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
-    <span class="ProgressBar-stepLabel">Cheese</span>
-  </li>
-  <li class="ProgressBar-step">
-    <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
-    <span class="ProgressBar-stepLabel">Pizza</span>
-  </li>
-  <li class="ProgressBar-step">
-    <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
-    <span class="ProgressBar-stepLabel">Steak</span>
-  </li>
-  <li class="ProgressBar-step">
-    <svg class="ProgressBar-icon"><use xlink:href="#checkmark-bold"/></svg>
-    <span class="ProgressBar-stepLabel">Potatoes</span>
-  </li>
-</ol>
+                <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+                  <div class="text-center bs-wizard-stepnum">Step 2</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Nam mollis tristique erat vel tristique. Aliquam erat volutpat. Mauris et vestibulum nisi. Duis molestie nisl sed scelerisque vestibulum. Nam placerat tristique placerat</div>
+                </div>
 
+                <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+                  <div class="text-center bs-wizard-stepnum">Step 3</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Integer semper dolor ac auctor rutrum. Duis porta ipsum vitae mi bibendum bibendum</div>
+                </div>
 
-<p>
-  <button id="previous">Previous</button>
-  <button id="advance">Advance</button>
-</p>
-
-<p>
-  Apply .is-current to a list item note the current step in the list.  Apply .is-complete to show the checkmark.  The line will be drawn when two list items marked with either class sit next to each other.
-</p>
-</div>
-
-<svg xmlns="http://www.w3.org/2000/svg">
-  <symbol id="checkmark-bold" viewBox="0 0 24 24">
-    <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/>
-  </symbol>
-</svg>
+                <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+                  <div class="text-center bs-wizard-stepnum">Step 4</div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center"> Curabitur mollis magna at blandit vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</div>
+                </div>
+            </div>
 
 <!--- end of progress bar -->
 
