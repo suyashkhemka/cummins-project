@@ -2,11 +2,16 @@
     NAVIGATION
 ********************/
 /* Add a black background color to the top navigation */
+
 .navbar {
     background-color: black;
     height: 90px;
     color:white;
     margin-bottom: 0px;
+}
+body {
+   background-image: images/cummins.pdf;
+   background-color: #cccccc;
 }
 .card
 {
