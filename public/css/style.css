@@ -192,12 +192,17 @@ span.psw {
 .icons
 {
 
+<<<<<<< HEAD
   height:40px;
   padding-left: 400px;
 }
 .poweredby
 {
   margin-top: 8px;
+=======
+  height:35px;
+  width:auto;
+>>>>>>> e5e83cc0dd029f5bdcc162a692fe16161297d09f
 }
 .logobar
 {
@@ -205,8 +210,8 @@ span.psw {
 }
 .logo
 {
-  height:35px;
-  width:35px;
+  height:30px;
+  width:30px;
   margin-left:10px;
 }
 th {
@@ -225,6 +230,16 @@ th, td {
 tr:nth-child(even) {background-color: #f2f2f2;}
 tr:nth-child(odd) {background-color: #cccccc;}
 tr:hover {background-color: grey;}
+
+
+
+/* center the tables */
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Style for progress bar*/
 /*http://kodhus.com/newsite/step-progress-bar-css-only/*/
