@@ -241,7 +241,7 @@ table
 
 /* Style for progress bar*/
 /*http://kodhus.com/newsite/step-progress-bar-css-only/*/
-/*S.container {
+S.container {
       width: 600px;
       margin: 100px auto;
   }
@@ -292,4 +292,4 @@ table
   }
   .progressbar li.active + li:after {
       background-color: green;
-  } */
+  } 
