@@ -276,7 +276,7 @@ body {
     height: 2px;
     width: 135px;
     content: "";
-    background-color: #00e600;
+    background-color: blue;
   }
 
   // Bullets/Balls
@@ -291,7 +291,7 @@ body {
     border: none;
     line-height: 1.2em;
     content: " ";
-    background-color: #00e600;
+    background-color: orange;
   }
 
   &:first-child {
@@ -302,19 +302,19 @@ body {
 }
 
 .header-progress-item.done {
-  color: #A4A4A4;
+  color: pink;
 }
 
 .header-progress-item.todo {
-  color: #DDDADD;
+  color: yellow;
 
   //Lines
   &:after {
-    background: #F1F1F1;
+    background: green;
   }
 
   // Bullets/Balls
   &:before {
-    background-color: #DADADA;
+    background-color: purple;
   }
 }
