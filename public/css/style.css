@@ -10,7 +10,7 @@
     margin-bottom: 0px;
 }
 body {
-   background-image: images/cummins.pdf;
+   background-image: url("images/cummins.jpg");
    background-color: #cccccc;
 }
 .card
