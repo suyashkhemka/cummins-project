@@ -10,9 +10,17 @@
     margin-bottom: 0px;
 }
 body {
-   background-image: url("images/cummins.jpg");
-   background-color: #cccccc;
+   /* background-image: url("../images/cummins.jpg");
+   opacity: 0.2; */
 }
+
+.bg-img {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.2;
+  background-color: #888888;
+}
+
 .card
 {
   background-color:#262626;
@@ -48,7 +56,7 @@ body {
 }
 #main
 {
-  background-color: grey;
+
 }
 #footer
 {
